@@ -1,0 +1,44 @@
+/*header*/
+header {
+    display: grid;
+    grid-template-columns: 150px auto; 
+    background-color: #e67084;
+    background-image: linear-gradient(#90bc44 10%, transparent 10%);
+    background-size: 20px 20px;
+    background-position: 0 0 30px 30px;
+    background-repeat: repeat;
+    
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+#logo_link:hover {
+    opacity: .8;
+    transform: scale(1.1);
+}
+
+.center {
+    text-align: center;
+    align-self: center;
+}
+#w01 {
+  display: flex;    
+}
+#w01 a {
+    text-align: center;
+    color: black;
+    padding: 4ex;
+    background-color:antiquewhite;
+    text-decoration-line: black;
+    border-radius: .8em;
+    border: #90bc44 solid .2em;
+    box-shadow: 10px 10px 10px #6f736f;
+}
+
+#w01:hover {
+    opacity: .8;
+    font-size: 110%;
+}
