@@ -29,7 +29,6 @@ header {
     background-color: #edae49;
     padding: 1.2rem;  
     border-radius: .8em; 
-    height: 6em;
     box-shadow: 10px 10px 10px #6f736f;
 
     /*This creates the stripes*/
@@ -53,7 +52,7 @@ header {
     float: left; 
     border-radius: .8em;
     border:#6f736f double .3vw;
-    width: 85px;
+    width: 95px;
     
 }
 
