@@ -46,6 +46,15 @@ header {
     justify-content: space-around;
 }
 
+a:link {
+    color:#e67084;
+}
+a:visited {
+    color:#677c13;
+}
+a:hover {
+    color: black;
+}
 
 
 #me {
