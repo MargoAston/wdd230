@@ -1,0 +1,29 @@
+@media only screen and (max-width: 32.5em){
+    header {
+        max-width: 80%;
+        margin: auto;
+    }
+    #me {
+        width: 40%;
+    }
+    h1 {
+        font-size: 5vmax;
+    }
+    #one h2 {
+        font-size: 3vmax;
+        padding-left: 1em;
+    }
+    #w01 {
+        font-size: 2.5vmax;
+        width: 75%;
+    }
+    footer {
+        max-width: 80%;
+        margin: auto;
+    }
+    
+    hr.dot_line {
+        margin-bottom: 0em;
+        width: 90%;
+    }
+}
