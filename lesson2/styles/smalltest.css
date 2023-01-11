@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Rancho&family=Rock+Salt&display=swap');
+
+
+body {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: rgb(236, 213, 184);  
+
+}
+
+header {
+    background-color: #edae49;
+    box-shadow: 10px 10px 10px #6f736f;
+    padding: 1em;
+    margin: 0px;
+    text-align: center;
+}
+
+
+h1 {
+    color: black;
+    text-shadow: 2px 2px #edae49, 4px 4px #6f736f;
+    font-size: 5vh;
+    margin: 0px;
+}
+
+header h2 {
+    font-size: 3vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+section img {
+    width: 100%;
+    margin-top: 1vh;
+}
+
+.designTopic h2 {
+    background-color: black;
+    color:white;
+    margin: 0px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: .5em;
+ }
+
+ .contentBox {
+    margin: 1vh;
+ }
+ 
+
+.designTopic {
+    background-color: 
+    white;
+    border-radius: 10px;
+    margin: 10%;
+}
+
+footer {
+    background-color: #edae49;
+    box-shadow: 10px 10px 10px #6f736f;
+    text-align: center;
+    padding: 1em;
+}
+
+footer p {
+    padding:  0em 0em 0em 0em;
+    margin: 0px;
+    font-size: small;
+    color: black;  
+}
+
+#copyright {
+    font-size: large;
+    color: black;
+}
