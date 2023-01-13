@@ -11,9 +11,10 @@ body {
 h1 {
     color: black;
     text-shadow: 2px 2px #edae49, 4px 4px #6f736f;
-    font-size: 3.5em;
+    font-size: 7vmin;
     font-weight: 300;
     padding-bottom: .5em;
+
 }
 
 h2 {
@@ -22,9 +23,10 @@ h2 {
 
 header {
     background-color: #edae49;
-    padding: 1rem;  
+    padding: 3vh;  
     border-radius: .8em; 
     box-shadow: 10px 10px 10px #6f736f;
+    text-align: center;
 }
 
 
@@ -34,10 +36,6 @@ header {
     justify-content:center;
     justify-content: space-around;
     align-items: center;
-}
-
-#logoLink {
-    grid-column-start: 1;
 }
 
 h1 {
@@ -59,9 +57,9 @@ a:hover {
     float: left; 
     border-radius: .8em;
     border:#5C700B double .25em;
-    width: auto;
-    height:fit-content;
     
+    height:fit-content;
+    transition: width 1s;
 }
 
 #one h2{
@@ -81,13 +79,14 @@ hr.dot-line{
     background-color:rgb(248, 238, 225);
     border-radius: .8em;
     border: #5C700B solid .1em;
-    width: 50%;
-    margin: .5em;
+    width: 40%;
+    margin-bottom: .5em;
+    text-align: center;
 }
 
 .assignment-complete span {
-    font-size: 30px;
-    margin-left: 25px;
+    font-size: 3vh;
+    margin-left: 2.5vh;
 }
 
 .assignment-complete:hover {
@@ -95,6 +94,7 @@ hr.dot-line{
     transform: scale(1.1);
     box-shadow: 10px 10px 10px #6f736f;
 }
+
 
 footer {
     background-color: #edae49;

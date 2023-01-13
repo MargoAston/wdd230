@@ -9,26 +9,39 @@ body {
 header {
     background-color: #edae49;
     box-shadow: 10px 10px 10px #6f736f;
-    padding: 1em;
+    padding: 0em;
     margin: 0px;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    margin-top: 0;  
 }
 
 
 h1 {
     color: black;
     text-shadow: 2px 2px #edae49, 4px 4px #6f736f;
-    font-size: 5vh;
+    font-size: 4vh;
     font-weight: 300;
     margin: 0px;
+    padding-top: 1vh;
+    transition: font-size 1s;
 }
 
 h2 {
     font-weight: 300;
+    font-size: 2vh;
 }
 
 h3 {
-    font-weight: 800;
+    font-weight: 400;
+    font-size: 2vh;
+    margin-top: 1.5vh;
+    margin-bottom: .5vh;
+}
+
+a {
+    font-size: 2vh;
 }
 
 p {
@@ -37,15 +50,17 @@ p {
 
 header h2 {
     font-size: 3vh;
-    margin: 0px;
-    padding: 0px;
+    margin: 0vh;
+    padding-bottom: 1.5vh;
+    transition: font-size 2s;
 }
 
 .mainGrid {
     display: grid;
     grid-template-columns: 1fr;
+    padding-top: 10vh;
+    
 }
-
 
 section img {
     width: 100%;
