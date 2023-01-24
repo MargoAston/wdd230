@@ -1,7 +1,7 @@
 var lastUpdated = `Last updated: ${document.lastModified}`;
 
-document.getElementById("updateDate").innerText=lastUpdated;
+document.getElementById("update-date").innerText=lastUpdated;
  
 
-const copyrightyear = document.querySelector("#copyright");
-copyrightyear.textContent = `© ${new Date().getFullYear()} .:|:. Margo Aston .:|:. California`;
+const copyrightYear = document.querySelector("#copyright");
+copyrightYear.textContent = `© ${new Date().getFullYear()} .:|:. Margo Aston .:|:. California`;

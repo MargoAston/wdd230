@@ -38,9 +38,9 @@ body {
   text-align: center;
 }
 
-img {
-  display: block;
+.logo {
   margin: 0 auto;
+  width: 30vw;
 }
 
 h1 {
@@ -219,7 +219,7 @@ nav a:hover {
 }
 
 /* This is the site map. */
-.sitemap {
+.site-map {
   display: grid;
   justify-content: center;
 
@@ -230,7 +230,7 @@ nav a:hover {
     ". left left center center right right ."
     "page2 page2 page3 page3 page4 page4 page5 page5";
 }
-.sitemap > div {
+.site-map > div {
   text-align: center;
 }
 
@@ -239,13 +239,13 @@ nav a:hover {
   background-color: #ccc;
   line-height: 3em;
 }
-.sm-page2 {
+.sm-page-2 {
   grid-area: page2;
   background-color: #ccc;
   line-height: 3em;
   margin-right: 10px;
 }
-.sm-page3 {
+.sm-page-3 {
   grid-area: page3;
   background-color: #ccc;
   line-height: 3em;
@@ -253,14 +253,14 @@ nav a:hover {
   margin-right:10px;
   
 }
-.sm-page4 {
+.sm-page-4 {
   grid-area: page4;
   background-color: #ccc;
   line-height: 3em;
   margin-left: 10px;
   margin-right: 10px;
 }
-.sm-page5 {
+.sm-page-5 {
   grid-area: page5;
   background-color: #ccc;
   line-height: 3em;
@@ -291,6 +291,24 @@ nav a:hover {
   border-top: 1px solid;
 }
 
-img {
-  width: 20%;
+.titles {
+  display: flex;
+  align-items: flex-end;
+}
+
+.titles h3{
+  flex: 1;  
+}
+.wireframes {
+  display:flex;
+  align-items: flex-start;
+
+}
+
+.wireframes img {
+  flex: 1;
+  width: 30%;
+  padding: .5em;
+  padding-top: 0;
+  
 }

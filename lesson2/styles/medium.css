@@ -1,6 +1,6 @@
 /*If the viewport is 700px or wider*/
 @media only screen and (min-width: 700px) {
-    .mainGrid {
+    .main-grid {
         grid-template-columns: 1fr 1fr;
     }
     h1 {

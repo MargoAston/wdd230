@@ -55,7 +55,7 @@ header h2 {
     transition: font-size 2s;
 }
 
-.mainGrid {
+.main-grid {
     display: grid;
     grid-template-columns: 1fr;
     padding-top: 10vh;
@@ -67,7 +67,7 @@ section img {
     margin-top: 1vh;
 }
 
-.designTopic h2 {
+.design-topic h2 {
     background-color: black;
     color:white;
     margin: 0px;
@@ -76,12 +76,12 @@ section img {
     padding: .5em;
  }
 
- .contentBox {
+ .content-box {
     margin: 1vh;
  }
  
 
-.designTopic {
+.design-topic {
     background-color: 
     white;
     border-radius: 10px;
