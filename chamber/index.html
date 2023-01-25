@@ -3,10 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--This is the font info-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;800;900&family=Rancho&family=Sacramento&display=swap" rel="stylesheet">
+
+    <title>Lakeside Chamber of Commmerce</title>
+
+    <!--Style Sheets-->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="styles/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <!-- enhance-desktop -->
+
 </head>
 <body>
+    <!--This is the Header-->
+    <header>
+        <img class="logo" src="images/logo-tan.jpg" alt="Lakeside Chamber logo">
+        <h1>Lakeside Chamber</h1>
+        
     
+    <!--This is the Navagation-->
+    <nav>
+        <button id="hamburgerBtn">
+            <span>&#8801;</span>
+            <span>x</span>
+        </button>
+                <ul id="primaryNav">
+                    <li><a href="#">Home</a></li>
+                    <li class="active"><a href="#">Products</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Contact</a></li>    
+                </ul>
+    </nav>
+</header>
+    <!--The content will go here-->
+    <main>
+        <section><h4>hero</h4></section>
+        <section><h4>event</h4></section>
+        <section><h4>weather</h4></section>
+        <section><h4>news release</h4></section>
+        <section>
+            <div>
+                <h4>Spotlight 1</h4>
+            </div>
+            <div>
+                <h4>Spotlight 2</h4>
+            </div>
+        </section>
+    </main>
+    <!--This is the footer-->
+    <footer>
+        <div class="col-md-12">
+            <address>
+                <p class="name">Lakeside Chamber of Commerce - CA</p>
+            <p class="address"><span>&#128204;</span>9924 Vine ST., Lakeside, CA 92040</p>
+            <p class="phone"><span>&#128222;</span>619.561.1031</p>
+            <p class="email"><span>&#9993;</span>info@lakesidechamber.org</p>
+        </address>
+        <hr>
+        </div>
+        <p>&copy; 2023 &bull; Margo Aston &bull; 123-555-6789</p>
+    </footer>
+
+    <script src="script/scripts.js"></script>
 </body>
 </html>
