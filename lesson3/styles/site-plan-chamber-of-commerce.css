@@ -192,23 +192,16 @@ td.colored {
 
 /* This is an example of the nav bar. */
 nav {
-  background-color: var(--nav-background-color);
-  line-height: 3em;
-  text-align: center;
-  font-size: 1.2em;
-  justify-content: center;
-}
-nav  {
-  list-style-type: none;
   display: flex;
-
+  background-color: var(--nav-background-color);
+  line-height: 10vh;
+  text-align: center;
+  justify-content: center; 
 }
-nav a {
-  padding:1em;
-  min-width: 120px;
-  text-decoration: none;
-  padding: 10px;
 
+nav a {
+  padding: 20px;
+  text-decoration: none;
 }
 nav a:link, nav a:visited {
   color: var(--nav-link-color);
