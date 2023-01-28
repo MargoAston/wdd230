@@ -1,0 +1,10 @@
+/*If the viewport is 700px or wider*/
+@media only screen and (min-width: 700px) {
+    .main-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    h1 {
+        font-size: 5vh;
+    }
+   
+}

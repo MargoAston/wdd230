@@ -13,18 +13,13 @@ document.getElementById("day").innerHTML = today;
 document.getElementById("date").innerHTML = new Date(). toLocaleDateString("en-UK", options)
 
 /*This is the hamberger button info*/
-function toggleMenu() {
-    document.getElementById("primaryNav").classList.toggle("open");
-    document.getElementById("hamburgerBtn").classList.toggle("open");
+function toggleMenu(x) {
+    document.getElementById("primary-nav").classList.toggle("open");
+    document.getElementById("container").classList.toggle("open");
+
+    x.classList.toggle("change");
 }
 
-
-function myFunction(x) {
-  x.classList.toggle("change");
-}
-
-const x = document.getElementById('hamburgerBtn');
-x.onclick = toggleMenu;
 
 /*This is the copyright line */
 const copyrightYear = document.querySelector("#copyright");

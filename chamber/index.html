@@ -13,12 +13,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;800;900&family=Rancho&family=Sacramento&display=swap" rel="stylesheet">
 
     <title>Lakeside Chamber of Commmerce</title>
-    <meta name="Chamber of Commerce website project" content="This is a fictious website for the Lakeside Chamber, it will demonstrate my design and coding skills.">
+    <meta name="description" content="This is a fictious website for the Lakeside Chamber, it will demonstrate my design and coding skills.">
+
     
     <!--Style Sheets-->
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
     <!-- phone-default -->
-    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
     <!-- enhance-tablet -->
     <!-- enhance-desktop -->
 
@@ -27,26 +28,30 @@
     <!--This is the Header-->
     <header>
         <a href="index.html">
-            <img id="link" src="images/logo-tan.jpg" alt="Lakeside Chamber logo">
+            <img id="logo" src="images/logo-tan.jpg" alt="Lakeside Chamber logo">
         </a>
 
         <h1>Lakeside, CA</h1>
         <p>Chamber of Commerce</p>
-        
+
+        <div id="social-media">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+
         <!--This is the Navagation-->
         <nav>
             <!--Animated hamburger button-->
-            <button id="hamburgerBtn">
-                <div class="container" onclick="myFunction(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-
-                <!--<span>&#8801;</span>
-                <span>x</span>-->
-            </button>
-            <ul id="primaryNav">
+            <div id="container" onclick="toggleMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul id="primary-nav">
                 <li><a href="#">Home</a></li>
                 <li class="active"><a href="#">Products</a></li>
                 <li><a href="#">Location</a></li>
@@ -54,10 +59,8 @@
             </ul>
         </nav>
 
-        
-
         <!--This is the date line-->
-        <div id="today-is"><span id="day">test</span><span id="date">date</spand>
+        <div id="today-is"><span id="day">test</span><span id="date">date</span>
         </div>
     </header>
 
@@ -83,7 +86,12 @@
         
         <div class="contact">
             <h3>Lakeside Chamber of Commerce - CA</h3>
-            <p class="address"><span>&#128204;</span> 9924 Vine ST., Lakeside, CA 92040</p>
+            <p class="address">
+                <a href="https://goo.gl/maps/R4QwPnFjbDWserP97" target="_blank">
+                    <span>&#128204;</span>  
+                </a>
+                 9924 Vine ST., Lakeside, CA 92040
+            </p>
             <p class="phone"><span>&#128222;</span> 619.561.1031</p>
             <p class="email"><span>&#9993;</span> info@lakesidechamber.org</p>
         </div>
@@ -91,6 +99,7 @@
         <hr>
         <div class="copyright">
             <p id="copyright"></p>
+            <p>WDD230 Project</p>
             <p id="update-date"></p>
         </div>
     </footer>
