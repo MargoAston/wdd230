@@ -1,10 +1,99 @@
 /*If the viewport is 700px or wider*/
 @media only screen and (min-width: 700px) {
-    .main-grid {
-        grid-template-columns: 1fr 1fr;
+    #logo {
+        width: 10rem;
+        transition: width 0.4s;
     }
+
     h1 {
-        font-size: 5vh;
+        font-size: 8vw;
     }
-   
+
+    header {
+        max-height: 150px;
+    }
+
+    header p {
+        font-size: 3vw;
+    }
+
+    main section:nth-child(1) {
+        margin-top: 24vw;
+    }
+
+    #social-media img {
+        max-height: 35px;
+        
+    }
+
+    #social-media {
+        transition: 1.6s;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;  
+    }
+
+    #hero, #spotlight,#news, #join {
+        grid-column: 1/3;
+    }
+
+    #news {
+        grid-row: 2;
+    }
+    #spotlight {
+        grid-row: 3;
+        flex-direction: row;
+    }
+
+    #spotlight div {
+        width: 100%;
+        height: 100%;
+    }
+    #join {
+        display:block;
+        grid-row: 4;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 3fr; 
+    }
+    footer .logo {
+        width: 80%;
+    }
+    .contact {
+        grid-column: 2;
+        align-self: center;
+        display:grid;
+        grid-template-columns: 3fr 2fr;
+        align-content:flex-start;
+    }
+    footer p, footer h3 {
+        text-align: left;
+    }
+    .phone {
+        grid-column: 2;
+        grid-row:1;
+        align-self: center;
+    }
+    .address {
+        grid-column: 1;
+        
+    }
+    .email {
+        grid-column: 2;
+    }
+    footer hr {
+        grid-column: 1/3;
+        grid-row: 2;
+    }
+
+    .copyright {
+        grid-column: 1/3;
+    }
+    .copyright p {
+        text-align: center;
+    }
 }
