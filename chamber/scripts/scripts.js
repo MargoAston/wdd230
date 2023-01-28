@@ -10,12 +10,17 @@ const d = new Date();
 let today = weekday[d.getDay()];
 
 document.getElementById("day").innerHTML = today;
-document.getElementById("date").innerHTML = new Date(). toLocaleDateString("en-US", options)
+document.getElementById("date").innerHTML = new Date(). toLocaleDateString("en-UK", options)
 
 /*This is the hamberger button info*/
 function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
     document.getElementById("hamburgerBtn").classList.toggle("open");
+}
+
+
+function myFunction(x) {
+  x.classList.toggle("change");
 }
 
 const x = document.getElementById('hamburgerBtn');

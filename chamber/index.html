@@ -26,15 +26,25 @@
 <body>
     <!--This is the Header-->
     <header>
-        <img class="logo" src="images/logo-tan.jpg" alt="Lakeside Chamber logo">
+        <a href="index.html">
+            <img id="link" src="images/logo-tan.jpg" alt="Lakeside Chamber logo">
+        </a>
+
         <h1>Lakeside, CA</h1>
-        <h2>Chamber of Commerce</h2>
+        <p>Chamber of Commerce</p>
         
         <!--This is the Navagation-->
         <nav>
+            <!--Animated hamburger button-->
             <button id="hamburgerBtn">
-                <span>&#8801;</span>
-                <span>x</span>
+                <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
+                <!--<span>&#8801;</span>
+                <span>x</span>-->
             </button>
             <ul id="primaryNav">
                 <li><a href="#">Home</a></li>
@@ -43,6 +53,9 @@
                 <li><a href="#">Contact</a></li>    
             </ul>
         </nav>
+
+        
+
         <!--This is the date line-->
         <div id="today-is"><span id="day">test</span><span id="date">date</spand>
         </div>
