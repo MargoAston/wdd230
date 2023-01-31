@@ -33,7 +33,6 @@
 body {
   max-width: 1200px;
   margin: 0 auto;
-  padding: ;
   font-size: 18px;
   text-align: center;
 }
@@ -88,6 +87,7 @@ header {
   color: var(--paragraph-color-on-color);
   background-color: var(--paragraph-background-color);
 }
+
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
 }
@@ -159,7 +159,7 @@ li {
 }
 
 /* This is the color palette display box. */
-.tableLarge {
+.table-large {
   display: none;
 }
 .colors {
@@ -173,8 +173,6 @@ li {
 
 .colors th {
   background-color: var(--accent2-color);
- 
-
 }
 
 .colors tr:last-child {
