@@ -1,10 +1,10 @@
-/*If the viewport is 1041px or wider*/
+/*If the viewport is 1109px or wider*/
 @media only screen and (min-width: 1109px) {
     main {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: 400px;
-        margin-top: 15vw;   
+          
     }
 
     header {
