@@ -69,6 +69,7 @@
         grid-column: 3/4;
         grid-row: 1/4;
         margin-top: 0;
+        flex-direction: column;
         
     }
     #weather{
