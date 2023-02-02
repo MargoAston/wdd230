@@ -139,8 +139,8 @@ nav #container:hover {
 
 nav {
     grid-column: 4;
-    grid-row: 1/5;
-    text-align: center; 
+    grid-row: 1/2;
+    text-align:center; 
     font-family: var(--subheading2-font);
     font-weight: 100;
     
