@@ -225,7 +225,7 @@ nav ul.open {
 /*This is the main style*/
 main {
     position: relative;
-    top: 120px;
+    top: 6rem;
     z-index: -1;
 }
 
@@ -275,6 +275,10 @@ section div {
    
 }
 
+#spotlight div:nth-child(3) {
+    display: none;
+}
+
 #join {
     display: none;
 }
@@ -283,7 +287,7 @@ section div {
 footer {
     background-color: var(--paragraph-background-color);
     position: relative;
-    top: 110px;
+    top: 8rem;
     padding-top: 1rem;
     font-family: var(--paragraph-font);
     margin-top: 2vh;
