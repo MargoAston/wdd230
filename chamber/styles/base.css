@@ -53,6 +53,7 @@ a:hover {
     transform: scale(1.1);
 }
 
+
 h1 {
     grid-column: 2/4;
     grid-row: 1;
@@ -284,6 +285,7 @@ footer {
     margin-top: 2vh;
 }
 
+
 footer img {
     display: block;
     margin-left: auto;
@@ -291,7 +293,7 @@ footer img {
     width: 40%;
 }
 .contact {
-    padding-bottom: 1rem;
+   
 }
 
 .copyright {
@@ -309,10 +311,12 @@ footer p {
     text-align: center;
 }
 footer a {
-    text-decoration: none;
+    text-decoration: none;  
+}
+
+footer a:hover {
     cursor: pointer;
+    text-decoration: underline;
 }
- footer a:hover {
-    transform: scale(1.1);
-}
+
 
