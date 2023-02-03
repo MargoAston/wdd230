@@ -25,10 +25,10 @@
 
     #social-media {
         transition: 1.6s;
+
     }
 
     main {
-        
         top: 165px;
         display: grid;
         grid-template-columns: 2fr 1fr;  
@@ -49,7 +49,9 @@
     #spotlight div {
         width: 100%;
         height: 100%;
+        max-height: 180px;
     }
+
     #join {
         display:block;
         grid-row: 4;
@@ -59,6 +61,7 @@
         display: grid;
         grid-template-columns: 1fr 3fr; 
         top:190px;
+        margin-top: 0;
     }
     footer .logo {
         width: 80%;
@@ -67,7 +70,7 @@
         grid-column: 2;
         align-self: center;
         display:grid;
-        grid-template-columns: 3fr 2fr;
+        grid-template-columns: 3fr 3fr;
         align-content:flex-start;
     }
     footer p, footer h3 {
@@ -75,11 +78,11 @@
     }
     .phone {
         grid-column: 2;
-        grid-row:1;
-        align-self: center;
+        grid-row:2;
+       
     }
     .address {
-        grid-column: 1;
+        grid-column: 2;
         
     }
     .email {

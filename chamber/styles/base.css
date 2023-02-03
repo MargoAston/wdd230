@@ -81,8 +81,10 @@ header p {
 #social-media {
     display: flex;
     grid-column: 3;
-    grid-row: 1/3;
-    align-self: center;  
+    grid-row: 2/3;
+    align-self: center; 
+    justify-content:space-evenly;
+    
 }
 
 #social-media img {
@@ -105,10 +107,18 @@ h3 {
   
 h4 {
     font-family:var(--subheading2-font);
-    font-weight: 100;
+    font-weight: 700;
     margin: .5em;
     font-size: 1rem;
+    color: var(--accent4-color);
+    box-shadow: ;
 }
+
+p {
+    font-family: var(--paragraph-font);
+}
+
+/*This is the style for the hamburger button*/
 #container {
     display: inline-block;
     max-height: 35px;
@@ -129,7 +139,7 @@ h4 {
 .change .bar2 {opacity: 0;}
   
 .change .bar3 {
-    transform: translate(0, -10px) rotate(45deg);
+    transform: translate(0, -8px) rotate(45deg);
 }
 
 nav #container:hover {
@@ -137,13 +147,16 @@ nav #container:hover {
     transform: scale(1.1);
 }
 
+/*This is the navigation style*/
 nav {
     grid-column: 4;
-    grid-row: 1/5;
+    grid-row: 2/5;
     text-align:center; 
     font-family: var(--subheading2-font);
     font-weight: 100;
-    
+    margin-right: 1vw;
+    margin-left: 3px;
+    min-width: 80px;
 }
 
 
@@ -152,9 +165,11 @@ nav ul {
     padding: 0;
     margin: 0; 
     z-index:25;
-    font-size:small
+    font-size:small;
+    display: none;
+    background-color: var(--accent2-color);
+    
 }
-
 
 nav ul li a {
     display: block;
@@ -165,7 +180,7 @@ nav ul li a {
     background-color: var(--nav-background-color);
     font-family: var(--subheading2-font);
     font-weight: 100;
-    
+   
 }
 
 
@@ -182,9 +197,6 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-nav ul {
-    display: none;
-}
 
 ul:hover {
     cursor: pointer;
@@ -210,17 +222,21 @@ nav ul.open {
     z-index: -1;
 }
 
-
-section {
-    background-color: var(--primary-color);
-    margin: 2vw;
-    height: 8rem;
-}
-
+/*This is the main style*/
 main {
     position: relative;
-    top: 110px;
+    top: 120px;
     z-index: -1;
+}
+
+hr {
+    height: 3px;
+    margin: 15px 0;
+    background: var(--accent4-color);
+}
+
+.emoji {
+    font-size: 5vh;
 }
 
 main section:nth-child(5) {
@@ -230,22 +246,47 @@ main section:nth-child(5) {
     padding: .5rem;
 }
 
+#hero {
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding: 0;
+}
+
+#hero img {
+    width: 100%;
+    grid-column: 1/4;
+}
+
+section {
+    background-color: var(--primary-color);
+    margin: 2vw;
+    padding: 4vw;
+    text-align: center;
+}
+
+section div {
+    padding:2vw;
+    height: auto;
+}
+
+#spotlight div {
+    margin: 1vh;
+    background-color: var(--secondary-color);
+   
+}
+
 #join {
     display: none;
 }
 
-div {
-    border: var(--accent3-color) solid .5px;
-    height: 50%;
-    
-}
-
+/*This is the footer style*/
 footer {
     background-color: var(--paragraph-background-color);
     position: relative;
     top: 110px;
     padding-top: 1rem;
     font-family: var(--paragraph-font);
+    margin-top: 2vh;
 }
 
 footer img {
