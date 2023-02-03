@@ -172,12 +172,10 @@ nav ul li a {
     text-decoration: none;
     color: var(--nav-link-color);
     border-top: 1px solid rgba(0,0,0,0.5);
-    background-color: var(--color-nav-background;
+    background-color: var(--color-nav-background);
     font-family: var(--font-subheading2);
-    font-weight: 100;
-   
+    font-weight: 100;  
 }
-
 
 nav ul li.active a {
     background-color: var(--color-nav-hover-link);
@@ -185,13 +183,11 @@ nav ul li.active a {
      
 }
 
-
 nav ul li a:hover {
     background-color: var(--color-nav-hover-background);
     color: var(--color-nav-hover-link);
     cursor: pointer;
 }
-
 
 ul:hover {
     cursor: pointer;
@@ -280,7 +276,7 @@ section div {
 
 /*This is the footer style*/
 footer {
-    background-color: var(--color-paragraph-background;
+    background-color: var(--color-paragraph-background);
     position: relative;
     top: 8rem;
     padding-top: 1rem;
