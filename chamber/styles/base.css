@@ -179,6 +179,12 @@ nav a {
     
 }
 
+span img {
+    max-height: 20px;
+    border-radius: 10px;
+    align-self: center;
+}
+
 nav ul li a:hover {
     background-color: var(--color-nav-hover-background);
     color: var(--color-nav-hover-link);

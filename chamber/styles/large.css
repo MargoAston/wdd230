@@ -9,7 +9,7 @@
 
     header {
         max-height: 300px;
-        grid-template-columns: 1fr 3fr 4fr 1fr;
+        grid-template-columns: 1fr 2fr 4fr 1fr;
     }
 
     header p {
@@ -17,8 +17,9 @@
     }
 
     #social-media {
-        grid-column: 4;
-        grid-row: 2;
+        display: none;
+        /*grid-column: 4;
+        grid-row: 2;*/
     }
 
     nav {
@@ -27,6 +28,16 @@
         margin: 0;
         margin: 0;
         
+    }
+
+    span img {
+        max-height: 20px;
+        border-radius: 10px;
+        align-self: center;
+    }
+
+    #primary-nav span {
+        align-content:center;
     }
 
     #primary-nav {
@@ -43,15 +54,17 @@
     }
 
     #primary-nav a {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         margin: 0;
         padding: 0;
         width: auto;
         border-top: none;
         background-color: transparent;
         padding: 10px;
-        
+    }
 
+    #primary-nav img {
+        justify-self:flex-end;
     }
 
     #primary-nav a:hover {
