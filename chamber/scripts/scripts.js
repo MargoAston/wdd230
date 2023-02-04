@@ -29,3 +29,6 @@ copyrightYear.textContent = `© ${new Date().getFullYear()} .:|:. Margo Aston .:
 var lastUpdated = `Last modified: ${document.lastModified}`;
 
 document.getElementById("update-date").innerText=lastUpdated;
+
+/*This is the banner*/
+const banner = document.querySelector("body");

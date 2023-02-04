@@ -5,17 +5,18 @@
         transition: width 0.4s;
     }
 
-    h1 {
-        font-size: 8vw;
-    }
 
     header {
-        max-height: 150px;
+        max-height: 120px;
     }
 
-    header p {
-        font-size: 3vw;
+    h1 {
+        font-size: 3rem;
     }
+
+   header p {
+    font-size: 1rem;
+   }
 
 
     #social-media img {
