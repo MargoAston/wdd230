@@ -27,8 +27,23 @@ copyrightYear.textContent = `© ${new Date().getFullYear()} .:|:. Margo Aston .:
 
 /*This is the update line*/
 var lastUpdated = `Last modified: ${document.lastModified}`;
-
 document.getElementById("update-date").innerText=lastUpdated;
 
-/*This is the banner*/
-const banner = document.querySelector("body");
+ /*Add a banner to the page on Mondays and Tuesdays*/
+if (d.getDay() == 1 || d.getDay() == 2) {
+
+    const container = document.querySelector('header'); /*select the element that will contain the new element*/
+    const banner = document.createElement('div'); /*create the new element to be added*/
+    banner.innerText = "🤝 Come join us for the chamber meet and greet Wednesday at 7:00pm."; /*create the content and put it in the new element*/
+    container.appendChild(banner); /*add the new element to the document*/
+
+    /*change the style of the new element*/
+    banner.style.color = '#f7f7f7'; 
+    banner.style.backgroundColor = '#3a508e';
+    banner.style.gridColumn = '1 / span 4';
+    banner.style.gridRow = '1 / span 1';
+    banner.style.textAlign = 'center';
+
+}
+
+
