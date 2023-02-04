@@ -34,7 +34,7 @@ if (d.getDay() == 1 || d.getDay() == 2) {
 
     const container = document.querySelector('header'); /*select the element that will contain the new element*/
     const banner = document.createElement('div'); /*create the new element to be added*/
-    banner.innerText = "🤝 Come join us for the chamber meet and greet Wednesday at 7:00pm."; /*create the content and put it in the new element*/
+    banner.innerText = "🤝 Come join us for the chamber meet and greet, Wed, 7:00pm."; /*create the content and put it in the new element*/
     container.appendChild(banner); /*add the new element to the document*/
 
     /*change the style of the new element*/
