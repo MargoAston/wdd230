@@ -50,7 +50,7 @@
     #primary-nav li { 
         display: flex;
         justify-content: center; 
-        
+        align-items: center;
     }
 
     #primary-nav a {
@@ -93,6 +93,13 @@
         display: flex;
         padding-left: 2vw;
         padding-right: 2vw;
+        
+    }
+
+    #hero img {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
     }
 
     #event {
