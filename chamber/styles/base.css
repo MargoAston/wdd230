@@ -139,6 +139,10 @@ p {
     transform: translate(0, -8px) rotate(45deg);
 }
 
+.active {
+    background-color: var(--color-accent2);
+}
+
 nav #container:hover {
     cursor: pointer;
     transform: scale(1.1);
@@ -195,14 +199,18 @@ nav ul a:active{
     border-radius: 20px;
 }
 
+
+
 ul:hover {
     cursor: pointer;
 }
 
 nav ul.open {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    /*flex-direction: column;*/
 }
+
+
 
 #today-is {
     grid-column: 1/5;

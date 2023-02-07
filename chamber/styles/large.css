@@ -40,7 +40,7 @@
         align-content:center;
     }
 
-    #primary-nav {
+    nav ul#primary-nav {
         display: flex;
         justify-content:space-around;
         background-color: var(--accent2-color); 

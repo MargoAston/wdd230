@@ -30,7 +30,7 @@
     }
 
     main {
-        top:8rem;
+        top:9rem;
         display: grid;
         grid-template-columns: 2fr 1fr;  
     }

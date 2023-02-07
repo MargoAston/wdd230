@@ -64,7 +64,7 @@
                 <div class="bar3"></div>
             </div>
             <ul id="primary-nav">
-                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">Location</a></li>
                 <li><a href="#">Contact</a></li>  
@@ -84,10 +84,12 @@
 
     <!--The content will go here-->
     <main>
-        <div id="hero">
-            
-           <img src="images/wdd230-org.jpg">
-        </div>
+        <picture id="hero">
+            <source media="(max-width: 700px)" srcset="images/sample-image-small.png">
+            <source media="(max-width: 1108px)" srcset="images/sample-image-medium.png">
+            <img src="images/sample-image-large800.png" alt="large sample image">
+          
+        </picture>
 
         <section id="event">
             <h4>Touch-a-Truck</h4>
