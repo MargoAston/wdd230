@@ -68,7 +68,7 @@
     }
 
     #primary-nav a:hover {
-        background-color: var(--color-nav-hover-background);
+        
     }
 
     #container {
@@ -118,6 +118,7 @@
     #spotlight div {
         max-height: none;
         max-width: 14vw;
+        align-self: center;
     }
 
     #spotlight div:nth-child(3){

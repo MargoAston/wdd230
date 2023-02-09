@@ -140,7 +140,7 @@ p {
 }
 
 .active {
-    background-color: var(--color-accent2);
+    text-decoration: underline;
 }
 
 nav #container:hover {
@@ -192,6 +192,7 @@ span img {
 nav ul li a:hover {
     background-color: var(--color-nav-hover-background);
     color: var(--color-nav-hover-link);
+    text-decoration: underline;
     cursor: pointer;
 }
 
@@ -221,7 +222,7 @@ nav ul.open {
     width: 100%;
     font-family: var(--font-paragraph);
     z-index: -1;
-    margin-top: 1vh;
+    margin-top: 2vh;
 }
 
 /*This is the main style*/
