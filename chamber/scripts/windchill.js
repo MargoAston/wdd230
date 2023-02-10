@@ -1,10 +1,11 @@
 //t(temperature) and s(speed) values are temperarily hard set.
-let t = 15;
-const s = 6;
+const t1 = document.getElementById("temperature");
+const s1 = document.getElementById("wind-speed");
 
-//Put t and s into the html elements
-document.getElementById("temperature").innerText = t;
-document.getElementById("wind-speed").innerText = s;
+let t = parseInt(t1.textContent);
+let s = parseInt(s1.textContent);
+
+
 
 //Calculate the windchill
 if (t <= 50 && s > 3) {
