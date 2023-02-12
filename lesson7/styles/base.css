@@ -99,13 +99,13 @@ main div{
 }
 
 
-picture img[src]{
+picture img[data-src]{
     filter:blur(0.5em);
     
 }
 
 picture img{
     filter: blur(0em);
-    transition: 2.5s;
+    transition: filter 2.5s;
 }
 

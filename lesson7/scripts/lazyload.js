@@ -8,7 +8,8 @@ function preloadImage(img) {
   }
 
   img.src = src;
-}
+  img.onload = () => {img.removeAttribute('data-src');};
+};
 
 const imgOptions = {
   threshold: 1,
@@ -23,6 +24,7 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
     } else {
       preloadImage(entry.target);
       imgObserver.unobserve(entry.target);
+      
     }
   })
 }, imgOptions);
