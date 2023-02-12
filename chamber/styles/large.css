@@ -67,9 +67,7 @@
         justify-self:flex-end;
     }
 
-    #primary-nav a:hover {
-        
-    }
+   
 
     #container {
         display: none;
@@ -92,8 +90,7 @@
         margin-top: 0;
         display: flex;
         padding-left: 2vw;
-        padding-right: 2vw;
-        
+        padding-right: 2vw;  
     }
 
     #hero img {

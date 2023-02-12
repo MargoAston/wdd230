@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="../favicon.ico">
+    
+    <title>Lazy Load</title>
+    <meta name="description" content="This page demonstartes my skills with progressinve loading (lazy-loading).">
+
+     <!--Style Sheets-->
+     <link href="styles/base.css" rel="stylesheet">
+     
+
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img id="logo" src="images/logo-tan200.webp" alt="Lakeside Chamber logo">
+        </a>
+
+        <h1>Margo Aston</h1>
+        <p>Progressive Loading / lazy-load</p>
+
+    </header>
+
+    <main>
+        <div>
+        <picture>
+            <img src="images/placeholder.webp" data-src="images/pergala2.webp" alt="large sample image">
+        </picture>
+        <picture>
+            <img src="images/placeholder.webp" data-src="images/oliver.webp" alt="large sample image">
+        </picture>
+        <picture>
+            <img src="images/placeholder.webp" data-src="images/donuts3 1.webp" alt="large sample image">
+        </picture>
+        <picture>
+            <img src="images/placeholder.webp" data-src="images/rock-n-block 1.webp" alt="large sample image">
+        </picture>
+        <picture>
+            <img src="images/placeholder.webp" data-src="images/ducks.webp" alt="large sample image">
+        </picture>
+        <picture>
+            <img src="images/placeholder.webp" data-src="images/community-center.webp" alt="large sample image">
+        </picture>
+    
+        </div>
+    </main>
+    <script src="scripts/lazyload.js"></script>
+</body>
+</html>

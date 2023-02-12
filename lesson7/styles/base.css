@@ -1,0 +1,110 @@
+/*styles of lazyload*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /*These are the colors*/
+    --color-primary: #EFEFEF;
+    --color-secondary: #f7f7f7;
+    --color-accent1: #7d7c7a;
+    --color-accent2: #c9c19f;
+    --color-accent3: #d3cdb2;
+    --color-accent4: #3a508e;
+
+    --color-paragraph-background: #d3cdb2;
+    --color-nav-link: #000000;
+    --color-nav-background: #cec7a8;
+    --color-nav-hover-link: #3a508a;
+    --color-nav-hover-background: #efefef;
+  
+    /*These are the fonts*/
+    --font-heading: Raleway, Verdana, sans-serif;
+    --font-subheading: Raleway, Verdana, sans-serif;
+    --font-subheading2: Raleway, Verdana, sans-serif;
+    --font-paragraph: Raleway, Verdana, sans-serif;
+}
+
+
+
+
+header {
+    background-color: var(--color-paragraph-background);
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr;
+    grid-template-rows: auto;
+    position: fixed;
+    top: 0;
+    
+    width: 100%;  
+    max-height: 90px;
+    padding-bottom: 1vh;
+}
+
+header a {
+    grid-column: 1;
+    grid-row: 2/4;
+    display: flex;
+    align-self:flex-end;
+    justify-self: end;
+}
+ /*This is the logo*/
+#logo {
+    width: 5rem;
+    transition: width 0.4s;
+}
+a:hover {
+    opacity: .8;
+    transform: scale(1.1);
+}
+
+h1 {
+    grid-column: 2/4;
+    grid-row: 2;
+    font-family: var(--font-heading);
+    text-shadow: 1px 1px var(--color-paragraph-background), 2px 2px #6f736f;
+    font-size: 1.5rem;
+    font-weight: 300;
+    transition: font-size 2s;
+    margin: 0;
+    padding-left: .5rem;
+    padding-top: .5vh;
+}
+
+header p {
+    grid-column: 2;
+    grid-row: 3;
+    font-family: var(--font-paragraph);
+    padding-left: .5rem;
+    z-index: 10;
+    font-size: .75rem;  
+}
+
+body {
+    background-color: var(--color-primary);
+}
+
+main {
+    position: relative;
+    z-index: -1;
+    top: 9vh;
+}
+main div{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center; 
+    
+}
+
+picture img[data-src]{
+    filter:blur(0.5em);
+    
+}
+
+picture img {
+    filter: blur(0em);
+    transition: filter 4.5s;
+}
+
