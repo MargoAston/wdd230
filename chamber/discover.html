@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--This is the font info-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;800;900&family=Rancho&family=Sacramento&display=swap" rel="stylesheet">
+
+    <!--Reference to the favicon-->
+    <link rel="icon" href="../favicon.ico">
+
+    <title>Discover</title>
+    <meta name="description" content="This page demonstrates progresive loading.">
+
+    <!--Style Sheets-->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="styles/base.css" rel="stylesheet">
+     
+    <!-- enhance-tablet -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="styles/large.css" rel="stylesheet">
+
+</head>
+<body>
+    <!--This is the Header-->
+    
+    <header>
+        <a href="index.html">
+            <img id="logo" src="images/logo-tan200.webp" alt="Lakeside Chamber logo">
+        </a>
+
+        <h1>Lakeside, CA</h1>
+        <p>Chamber of Commerce</p>
+        
+        <!--This is the Navagation-->
+        <nav>
+            <!--Animated hamburger button-->
+            <div id="container" onclick="toggleMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul id="primary-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Contact</a></li>  
+                <li><a href="https://www.facebook.com/lakeside.chamber">
+                    <span>
+                        <img src="images/facebook.png" alt="fb icon">
+                    </span>Facebook</a></li>
+                <li><a href="https://www.instagram.com/lakesidechamber/">
+                    <span>
+                        <img src="images/instagram.png" alt="instagram icon"> 
+                    </span>Instagram</a>
+                </li>   
+            </ul>
+        </nav>
+    </header>
+
+    <main id="discover-main">
+        <section id="around-town">
+            <h4>Around Town</h4>
+            <picture>
+                <img src="images/placeholder.webp" data-src="images/pergala2.webp" alt="large sample image">
+            </picture>
+            <picture>
+                <img src="images/placeholder.webp" data-src="images/oliver.webp" alt="large sample image">
+            </picture>
+            <picture>
+                <img src="images/placeholder.webp" data-src="images/donuts3 1.webp" alt="large sample image">
+            </picture>
+            <picture>
+                <img src="images/placeholder.webp" data-src="images/rock-n-block 1.webp" alt="large sample image">
+            </picture>
+            <picture>
+                <img src="images/placeholder.webp" data-src="images/ducks.webp" alt="large sample image">
+            </picture>
+            <picture>
+                <img src="images/placeholder.webp" data-src="images/community-center.webp" alt="large sample image">
+            </picture>
+        </section>
+    </main>
+    <script src="scripts/scripts.js"></script> 
+    <script src="scripts/lazyload.js"></script>
+</body>
+</html>

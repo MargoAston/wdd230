@@ -328,4 +328,25 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/*style for the discover page*/
+picture img[data-src]{
+    filter:blur(0.5em);
+    
+}
 
+picture img{
+    filter: blur(0em);
+    transition: filter 1.2s;
+}
+
+#around-town {
+    max-height: none;
+    max-width: 350px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+   
+    
+   
+}
