@@ -339,13 +339,19 @@ picture img{
     transition: filter 1.2s;
 }
 
+#discover-main {
+    align-items: center;
+    justify-content: center;
+    
+}
 #around-town {
     max-height: none;
-    max-width: 350px;
-    align-self: center;
-    
-    position: relative;
-   
-    
-   
+    max-width: auto;
+    display: flex;
+    flex-direction: column;
+
+}
+#demographics {
+    max-height: none;
+
 }

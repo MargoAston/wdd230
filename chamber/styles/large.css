@@ -163,13 +163,21 @@
     }
 
     /*style for discover page*/
+    #discover-main {
+        grid-template-rows: auto;
+     
+    }
     #around-town  {
         grid-column: 3;
-        grid-row: 1;
+        grid-row: 2;
         display: flex;
         flex-direction: column;
-        justify-content: 
-
         
     }
+    #demographics {
+        grid-column: 1/4;
+        max-height: none;
+    
+    }
+
 }
