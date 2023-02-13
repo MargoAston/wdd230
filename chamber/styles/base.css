@@ -343,8 +343,7 @@ picture img{
     max-height: none;
     max-width: 350px;
     align-self: center;
-    display: flex;
-    flex-direction: column;
+    
     position: relative;
    
     

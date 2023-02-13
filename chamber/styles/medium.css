@@ -26,7 +26,6 @@
 
     #social-media {
         transition: 1.6s;
-
     }
 
     main {
@@ -87,5 +86,16 @@
     }
     .copyright p {
         text-align: center;
+    }
+
+    /*style for the discover page*/
+    #around-town {
+        grid-column: 1/3;
+        max-width: auto;
+    }
+
+    #around-town picture {
+        max-width: auto;
+        
     }
 }
