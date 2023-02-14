@@ -346,7 +346,7 @@ picture img{
 }
 #around-town {
     max-height: none;
-    max-width: auto;
+    
     display: flex;
     flex-direction: column;
 
