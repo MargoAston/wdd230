@@ -1,4 +1,9 @@
 /*This is the date info*/
+//Initialize display elements.
+const dayIs = document.querySelector("#day");
+const dateIs = document.getElementById("date");
+
+//Get values.
 const options = {
     day: "numeric",
     month: "long",
@@ -9,10 +14,12 @@ const weekday = ["Sunday, ", "Monday, ", "Tuesday, ", "Wednesday, ", "Thursday, 
 const d = new Date();
 let today = weekday[d.getDay()];
 
-document.getElementById("day").innerHTML = today;
-document.getElementById("date").innerHTML = new Date(). toLocaleDateString("en-UK", options)
+//Show values.
+dayIs.textContent = today;
+dateIs.textContent = new Date(). toLocaleDateString("en-UK", options);
 
-/*This is the hamberger button info*/
+
+/*This is the hamburger button info*/
 function toggleMenu(x) {
     document.getElementById("primary-nav").classList.toggle("open");
     document.getElementById("container").classList.toggle("open");
