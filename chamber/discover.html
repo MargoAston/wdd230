@@ -22,7 +22,6 @@
     <link href="styles/normalize.css" rel="stylesheet">
     <!-- phone-default -->
     <link href="styles/base.css" rel="stylesheet">
-     
     <!-- enhance-tablet -->
     <link href="styles/medium.css" rel="stylesheet">
     <!-- enhance-desktop -->
@@ -41,6 +40,11 @@
         <p>Chamber of Commerce</p>
         
         <!--This is the Navagation-->
+         <!--This is the date line-->
+         <div id="today-is">
+            <p>Discover Lakeside</p>
+         </div>
+
         <nav>
             <!--Animated hamburger button-->
             <div id="container" onclick="toggleMenu(this)">
@@ -68,66 +72,80 @@
 
     <main id="discover-main">
         <section id="around-town">
-            <h2>Around Town</h2>
-            <picture>
+            
+            <h2>Things to see and do in Lakeside:</h2>
+            <picture class="discover-img">
                 <img src="images/placeholder.webp" data-src="images/pergala2.webp" alt="large sample image">
             </picture>
-            <h3>Image 1 description:</h3> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum. Etiam dignissim diam quis enim lobortis. 
+            
+            <h3>The Lakes:</h3> 
+            <p>We have four lakes, El Capitan Lake, where you can fish, boat and jet ski. Lake Jennings has camping and fishing, San Vincente Reservoir has fishing and general boating, no water contact activities, and Lindo Lake has fishing and walking paths. 
             </p>
             <picture>
                 <img src="images/placeholder.webp" data-src="images/oliver.webp" alt="large sample image">
             </picture>
-            <h3>Image 2 description:</h3> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum. Etiam dignissim diam quis enim lobortis. 
+            <h3>Golf:</h3> 
+            <p>For the golf enthusiast we have two golf courses. Barona Creek Golf Club and Willowbrook Golf Course.
             </p>
             <picture>
                 <img src="images/placeholder.webp" data-src="images/donuts3 1.webp" alt="large sample image">
             </picture>
-            <h3>Image 3 description:</h3> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum. Etiam dignissim diam quis enim lobortis. 
+            <h3>Award Winning Library:</h3> 
+            <p>Our public library system has earned an award as being one of the top ten library systems in the nation. 
             </p>
             <picture>
                 <img src="images/placeholder.webp" data-src="images/rock-n-block 1.webp" alt="large sample image">
             </picture>
-            <h3>Image 4 description:</h3> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum. Etiam dignissim diam quis enim lobortis. 
+            <h3>Community Center:</h3> 
+            <p>Lunch is served daily to our senior friends. Individuals of all ages are invited to participate in a wide variety of classes and workshops.
             </p>
             <picture>
                 <img src="images/placeholder.webp" data-src="images/ducks.webp" alt="large sample image">
             </picture>
-            <h3>Image 5 description:</h3> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum. Etiam dignissim diam quis enim lobortis. 
+            <h3>The Lakeside Skatepark:</h3> 
+            <p>Show off your skills and practice your tricks at our family friendly skatepark. 
             </p>
             <picture>
                 <img src="images/placeholder.webp" data-src="images/community-center.webp" alt="large sample image">
             </picture>
-            <h3>Image 6 description:</h3> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum. Etiam dignissim diam quis enim lobortis. 
+            <h3>Lakeside Rodeo Association:</h3> 
+            <p>We host a minimum of 2 sanctioned rodeos per year with numerous concerts and events. 
             </p>
         </section>
-        <section id="demographics">
+
+        <section class="discover-container">
+            <div>
             <h2>Demographic Data:</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum. Etiam dignissim diam quis enim lobortis.</p>
+            <p>⌘</p>
+            
+            
+            
+                <h3>Lakeside is an unincorporated community nestled in the foothills of San Diego county.</h3>
+                <p class="emoji">🏘</p>
+
+                <h3 class="label">Elevation: <span>413'</span></h3>
+                <h3 class="label">Area: <span>7.281 sq/mi</span></h3>
+                <h3 class="label">Population: <span>21,032 (2020)</span></h3>
+
+            </div>
         </section>
 
         <!--This section uses local storage-->
-        <section>
-            <h2>Using Local Storage</h2>
+ <!--This is the date line-->
+        
 
-            <p><span class="label">Number of visits: </span> <span class="visits"></span></p>
+        <section class="discover-container">
+            <div>
+            <h2>Welcome</h2>
+            <p>⌘</p>
 
-            <br> 
+            
+            <h3><span class="label">Number of visits: </span> <span class="visits"></span></h3>
 
-            <p>Days since last visit: <span class="elapsed-days"></span></p>
+            <h3><span class="label">Days since your last visit: </span><span class="elapsed-days"></span></h3>
              
-            <br>
-
-            <p>assignment help: <strong>DateTime</strong> <br>"timestamp is based upon time since UInix epoch (UTC), <br> i.e., January, 1 1970.</p>
-
-            <br>
-
-            <p>Timestamp upon load: <span class="today"></span> in milliseconds.</p>
+            <h3><span class="label">Timestamp upon load:</span> <span class="today"></span> (in milliseconds)</h3>
+            </div>
         </section>
 
     </main>

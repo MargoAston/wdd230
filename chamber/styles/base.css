@@ -26,6 +26,10 @@
 }
 
 
+p:hover {
+    cursor: pointer;
+}
+
 header {
     background-color: var(--color-paragraph-background);
     display: grid;
@@ -218,7 +222,7 @@ nav ul.open {
     grid-row: 4;
     text-align: center;
     background-color: var(--color-accent2);
-    padding: .5vh 0;
+    padding: .9vh 0;
     width: 100%;
     font-family: var(--font-paragraph);
     z-index: -1;
@@ -240,6 +244,10 @@ hr {
 
 .emoji {
     font-size: 5vh;
+}
+
+main section p {
+    padding-top: 1vh;
 }
 
 main section:nth-child(5) {
@@ -272,13 +280,17 @@ section div {
     height: auto;
 }
 
-#spotlight div {
+.spotlight div, .discover-container {
     margin: 1vh;
     background-color: var(--color-secondary);
    
 }
 
-#spotlight div:nth-child(3) {
+.spotlight div {
+    border-radius: 15px;
+}
+
+.spotlight div:nth-child(3) {
     display: none;
 }
 
@@ -339,7 +351,13 @@ picture img{
     transition: filter 1.2s;
 }
 
+
+picture img:hover {
+    cursor: pointer;
+}
+
 #discover-main {
+    top: 6rem;
     align-items: center;
     justify-content: center;
     
@@ -349,9 +367,35 @@ picture img{
     
     display: flex;
     flex-direction: column;
-
 }
-#demographics {
+#around-town h2 {
+    padding: 2rem;
+    font-size: 2rem;
+}
+#around-town p {
+    padding-bottom: 2rem;
+    max-width: 80%;
+    align-self: center;
+}
+.discover-container {
+    background-color: var(--color-primary);
     max-height: none;
-
+    
 }
+.discover-container div{
+    
+    background-color: var(--color-secondary);
+    border-radius: 15px;
+}
+
+.label {
+    font-weight: 500;
+    color: var(--color-accent4)
+}
+
+.label span {
+    font-weight: 200;
+    color: black;
+}
+
+

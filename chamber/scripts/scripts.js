@@ -1,7 +1,7 @@
 /*This is the date info*/
 //Initialize display elements.
-const dayIs = document.querySelector("#day");
-const dateIs = document.getElementById("date");
+let dayIs = document.querySelector("#day");
+let dateIs = document.getElementById("date");
 
 //Get values.
 const options = {
@@ -12,11 +12,12 @@ const options = {
 
 const weekday = ["Sunday, ", "Monday, ", "Tuesday, ", "Wednesday, ", "Thursday, ", "Friday, ", "Saturday, "];
 const d = new Date();
-let today = weekday[d.getDay()];
+let todayHome= weekday[d.getDay()];
+console.log(todayHome);
 
 //Show values.
-dayIs.textContent = today;
-dateIs.textContent = new Date(). toLocaleDateString("en-UK", options);
+dayIs.textContent = todayHome;
+dateIs.textContent = new Date().toLocaleDateString("en-UK", options);
 
 
 /*This is the hamburger button info*/
