@@ -244,9 +244,6 @@ hr {
     font-size: 5vh;
 }
 
-#event:hover {
-    cursor: pointer;
-}
 
 main section p {
     padding-top: 1vh;
@@ -351,6 +348,8 @@ picture img[data-src]{
 picture img{
     filter: blur(0em);
     transition: filter 1.2s;
+    border: solid var(--color-primary);
+    transition: border .5s;
 }
 
 
@@ -396,9 +395,5 @@ picture img{
     color: black;
 }
 
-#around-town picture img:hover{
-    border: solid var(--color-accent3) 20px;
-    border-radius: 5px;
-    transition: border .5s;
-}
+
 
