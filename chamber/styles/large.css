@@ -59,9 +59,11 @@
         padding: 0;
         width: auto;
         border-top: none;
-        background-color: transparent;
+        background-color: var(--color-paragraph-background);
         padding: 10px;
     }
+
+    
 
     #primary-nav img {
         justify-self:flex-end;
@@ -183,5 +185,6 @@
         
     }
     
+   
 
 }

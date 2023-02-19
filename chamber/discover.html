@@ -40,10 +40,10 @@
         <p>Chamber of Commerce</p>
         
         <!--This is the Navagation-->
-         <!--This is the date line-->
-         <div id="today-is">
+        <!--This is the date line-->
+        <div id="today-is">
             <p>Discover Lakeside</p>
-         </div>
+        </div>
 
         <nav>
             <!--Animated hamburger button-->
@@ -53,15 +53,26 @@
                 <div class="bar3"></div>
             </div>
             <ul id="primary-nav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="#">Location</a></li>
-                <li><a href="#">Contact</a></li>  
-                <li><a href="https://www.facebook.com/lakeside.chamber">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="discover.html" class="active">Discover</a>
+                </li>
+                <li>
+                    <a href="#">Location</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>  
+                <li>
+                    <a href="https://www.facebook.com/lakeside.chamber">
                     <span>
                         <img src="images/facebook.png" alt="fb icon">
-                    </span>Facebook</a></li>
-                <li><a href="https://www.instagram.com/lakesidechamber/">
+                    </span>Facebook</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/lakesidechamber/">
                     <span>
                         <img src="images/instagram.png" alt="instagram icon"> 
                     </span>Instagram</a>
@@ -74,37 +85,42 @@
         <section id="around-town">
             
             <h2>Things to see and do in Lakeside:</h2>
-            <picture class="discover-img">
+
+            <picture>
                 <img src="images/placeholder.webp" data-src="images/pergala2.webp" alt="large sample image">
             </picture>
-            
             <h3>The Lakes:</h3> 
             <p>We have four lakes, El Capitan Lake, where you can fish, boat and jet ski. Lake Jennings has camping and fishing, San Vincente Reservoir has fishing and general boating, no water contact activities, and Lindo Lake has fishing and walking paths. 
             </p>
+            
             <picture>
                 <img src="images/placeholder.webp" data-src="images/oliver.webp" alt="large sample image">
             </picture>
             <h3>Golf:</h3> 
             <p>For the golf enthusiast we have two golf courses. Barona Creek Golf Club and Willowbrook Golf Course.
             </p>
+
             <picture>
                 <img src="images/placeholder.webp" data-src="images/donuts3 1.webp" alt="large sample image">
             </picture>
             <h3>Award Winning Library:</h3> 
             <p>Our public library system has earned an award as being one of the top ten library systems in the nation. 
             </p>
+
             <picture>
                 <img src="images/placeholder.webp" data-src="images/rock-n-block 1.webp" alt="large sample image">
             </picture>
             <h3>Community Center:</h3> 
             <p>Lunch is served daily to our senior friends. Individuals of all ages are invited to participate in a wide variety of classes and workshops.
             </p>
+
             <picture>
                 <img src="images/placeholder.webp" data-src="images/ducks.webp" alt="large sample image">
             </picture>
             <h3>The Lakeside Skatepark:</h3> 
             <p>Show off your skills and practice your tricks at our family friendly skatepark. 
             </p>
+
             <picture>
                 <img src="images/placeholder.webp" data-src="images/community-center.webp" alt="large sample image">
             </picture>
@@ -131,9 +147,8 @@
         </section>
 
         <!--This section uses local storage-->
- <!--This is the date line-->
+        <!--This is the date line-->
         
-
         <section class="discover-container">
             <div>
             <h2>Welcome</h2>
@@ -148,7 +163,35 @@
             </div>
         </section>
 
+            
     </main>
+
+    <!--This is the footer-->
+    <footer>
+        <img class="logo" src="images/logo-tan200.webp" alt="Lakeside Chamber logo">
+        
+        <div class="contact">
+            <h3>Lakeside Chamber of Commerce - CA</h3>
+            <div id="cont-info">
+            <p class="address">
+                <a href="https://goo.gl/maps/R4QwPnFjbDWserP97" target="_blank">
+                    <span>📍</span>  
+                </a>
+                 9924 Vine ST., Lakeside, CA 92040
+            </p><!--This is the footer-->
+            <p class="phone"><span>📞</span> 619.561.1031</p>
+            <p class="email"><span>📧</span> info@lakesidechamber.org</p>
+            </div>
+        </div>
+
+        <hr>
+        <div class="copyright">
+            <p id="copyright"></p>
+            <p>WDD230 Project</p>
+            <p id="update-date"></p>
+        </div>
+    </footer>
+
     <script src="scripts/scripts.js"></script>
     <script src="scripts/lazyload.js"></script>
     <script src="scripts/visits.js"></script>
