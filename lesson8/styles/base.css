@@ -1,0 +1,44 @@
+:root {
+    --primary: #90bc43;
+    --accent1:  #5980CE;
+    --accent2: #E67084;
+    --foredark: hsla(0,0%,10%,1);
+	--forelight: hsla(0,0%,100%,1);
+	--border: hsl(0,0%,20%);
+	--borderlight: hsl(0,0%,30%);
+	--zebra: hsl(0, 0%, 93%, 1);
+}
+
+table {
+    border-collapse: collapse;
+    width: auto;
+    margin: 100px auto;
+}
+
+
+th:first-child {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    
+}
+th {
+    background-color: var(--accent2);
+    border: 1px solid var(--accent2);
+    font-size: large;
+    padding: 10px;
+}
+
+th:first-child {
+    background-color: var(--primary);
+}
+
+
+td {
+    border: 1px solid var(--zebra); 
+    text-align: center; 
+    padding:5px 10px; 
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
