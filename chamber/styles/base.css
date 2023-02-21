@@ -1,7 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
 
 :root {
     /*These are the colors*/
@@ -23,6 +19,13 @@
     --font-subheading: Raleway, Verdana, sans-serif;
     --font-subheading2: Raleway, Verdana, sans-serif;
     --font-paragraph: Raleway, Verdana, sans-serif;
+}
+
+*{ 
+    /*apply a natural box layout model to all elements*/
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -339,7 +342,8 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/*style for the discover page*/
+/*--------------style for the discover page----------------*/
+
 picture img[data-src]{
     filter:blur(0.5em);
     
@@ -395,5 +399,73 @@ picture img{
     color: black;
 }
 
+/*------------Style for the join page------------------*/
+#join-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FORM */
+form fieldset {
+    min-width: 350px;
+    margin: 2rem 0;
+    border: 1px solid var(--color-accent4);
+    border-radius: 10px;
+    padding: .5rem 2%;
+
+}
+
+form legend {
+    color: var(--color-accent4);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form div {
+    display:block;
+    padding-top: 1rem;
+    font-size: .8rem;
+}
+
+form label.top input {
+    
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: var(--color-accent1);
+    width: 100%;
+    background-color: var(--color-primary);
+}
+
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+#bus-description {
+    min-height: 100px;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+form label.top input:required {
+    border-left: #9c2c13 solid 6px;
+}
+form label.top input:required:valid {
+    border-left: var(--color-accent4) solid 6px;
+}
 
 

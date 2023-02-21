@@ -9,6 +9,12 @@
 	--zebra: hsl(0, 0%, 93%, 1);
 }
 
+caption {
+    padding: 10px;
+    caption-side: bottom;
+
+}
+
 table {
     border-collapse: collapse;
     width: auto;
