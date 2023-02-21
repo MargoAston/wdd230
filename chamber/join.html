@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!--This is the font info-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;800;900&family=Rancho&family=Sacramento&display=swap" rel="stylesheet">
+
+     <!--Reference to the favicon-->
+     <link rel="icon" href="../favicon.ico">
+
+    <title>Join the Chamber</title>
+    <meta name="description" content="This page demonstrates the use of HTML forms.">
+
+    <!--Style Sheets-->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="styles/base.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="styles/large.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img id="logo" src="images/logo-tan200.webp" alt="Lakeside Chamber logo">
+        </a>
+
+        <h1>Lakeside, CA</h1>
+        <p>Chamber of Commerce</p>
+        
+        <!--This is the Navagation-->
+        <!--This is the date line-->
+        <div id="today-is">
+            <p>Welcome, we are excited to have you on the Lakeside Chamber team!</p>
+        </div>
+
+        <nav>
+            <!--Animated hamburger button-->
+            <div id="container" onclick="toggleMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul id="primary-nav">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="discover.html">Discover</a>
+                </li>
+                <li>
+                    <a href="#" class="active">Join</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>  
+                <li>
+                    <a href="https://www.facebook.com/lakeside.chamber">
+                    <span>
+                        <img src="images/facebook.png" alt="fb icon">
+                    </span>Facebook</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/lakesidechamber/">
+                    <span>
+                        <img src="images/instagram.png" alt="instagram icon"> 
+                    </span>Instagram</a>
+                </li>   
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main>
+        <h1>Course Proposal Application</h1>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label class="top" >First Name* <input type="text" name="fname" required></label>
+                    <label class="top">Lirst Name* <input type="text" name="lname" required></label>
+                    <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                    <label class="top" >Email* <input type="email" name="email" required placeholder="someone@gmail.com"></label>
+                    <label class="top" >Website <input type="url" name="url" placeholder="http//"</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Course Information</legend>
+                    <label class="sbs"><input type="radio" name="audience" value="beginner">Beginner </label>
+                    <label class="sbs" ><input type="radio" name="audience" value="intermediate">Intermediate </label>
+                    <label class="sbs" ><input type="radio" name="audience" value="advanced">Advanced </label>
+
+                    <div>Software Needed</div>
+                    <label class="sbs"><input type="checkbox" name="editing" value="yes">Photo Editing</label>
+                    <label class="sbs"><input type="checkbox" name="code" value="yes">Coding</label>
+                    <label class="sbs"><input type="checkbox" name="process" value="yes">Preprocessor</label>
+                    <label class="sbs"><input type="checkbox" name="client" value="yes">FTP Client</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Funding</legend>
+                    <label class="top" >Anticipted Completion Date    <input type="date" name="completeDate"></label>
+                    <label class="top">Course Subject
+                        <select name="subject">
+                            <option value="">Please Select &#9662;</option>
+                            <option value="software">Software Development</option>
+                            <option value="creative>">Creative Professional</option>
+                            <option value="info">Information Technology</option>
+                            <option value="data">Data Structures</option>
+                            <option value="construction">Construction</option>
+                            <option value="manufacturing">Manufacturing</option>
+                        </select>
+                    </label>
+
+                    <label class="top">How many Authors <input type="date" name="completeDate"></label>
+                </fieldset>
+
+                <input type="submit" value = "Propose My Course" class="submitBtn">
+            </form>
+
+    </main>
+    
+
+
+
+    <!--This is the footer-->
+    <footer>
+        <img class="logo" src="images/logo-tan200.webp" alt="Lakeside Chamber logo">
+        
+        <div class="contact">
+            <h3>Lakeside Chamber of Commerce - CA</h3>
+            <div id="cont-info">
+            <p class="address">
+                <a href="https://goo.gl/maps/R4QwPnFjbDWserP97" target="_blank">
+                    <span>📍</span>  
+                </a>
+                 9924 Vine ST., Lakeside, CA 92040
+            </p>
+            <p class="phone"><span>📞</span> 619.561.1031</p>
+            <p class="email"><span>📧</span> info@lakesidechamber.org</p>
+            </div>
+        </div>
+
+        <hr>
+        <div class="copyright">
+            <p id="copyright"></p>
+            <p>WDD230 Project</p>
+            <p id="update-date"></p>
+        </div>
+    </footer>
+</body>
+</html>
