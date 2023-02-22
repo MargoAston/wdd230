@@ -138,19 +138,25 @@
         
     }
     
-   /*------------Style for the join page------------------*/
-   main#join-main {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-   } 
+    /*------------Style for the join page------------------*/
+    main#join-main {
+        display:grid;
+        grid-template-columns: 2fr 3fr;
+        margin: 0 25vh;
+        justify-content: center;
+    } 
+
+    table {
+        margin-top: 18vh;
+    }
    
    form {
-        grid-column: 2/3;
+    grid-row: 1;
+    margin-top: 27px;
     }
 
     form div{
-        padding: 0; 
-        
+        padding: 0;  
     }
     
    form label.sbs {
