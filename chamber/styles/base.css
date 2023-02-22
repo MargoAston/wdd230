@@ -32,20 +32,18 @@
 header {
     background-color: var(--color-paragraph-background);
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr 2fr 4fr 1fr;
     position: fixed;
     top: 0;
-   
-    width: 100%;  
-    max-height: 90px;
+    width: 100%; 
+    max-height: 99.73px;
     z-index: 10;
 }
 
 header a {
-    grid-column: 1;
     grid-row: 2/4;
 }
+
  /*This is the logo*/
 #logo {
     width: 5rem;
@@ -76,22 +74,7 @@ header p {
     font-family: var(--font-paragraph);
     padding-left: .5rem;
     /*z-index: 10;*/
-    font-size: .75rem;
-    
-}
-#social-media {
-    display: flex;
-    grid-column: 3;
-    grid-row: 3/3;
-    align-self: center; 
-    justify-content:space-evenly;
-    
-}
-
-#social-media img {
-    border-radius: 50%;
-    max-height: 25px;
-    margin-left: 4px;;
+    font-size: .75rem;   
 }
 
 h2 {
@@ -112,7 +95,6 @@ h4 {
     margin: .5em;
     font-size: 1rem;
     color: var(--accent4-color);
-  
 }
 
 p {
@@ -143,7 +125,6 @@ p {
     transform: translate(0, -8px) rotate(45deg);
 }
 
-
 nav #container:hover {
     cursor: pointer;
     transform: scale(1.1);
@@ -159,7 +140,6 @@ nav {
     margin-right: 1vw;
     margin-left: 3px;
     min-width: 80px;
-    
 }
 
 
@@ -231,10 +211,9 @@ nav ul.open {
 }
 
 /*This is the main style*/
-main {
+main{
     position: relative;
-    top: 5.5rem;
-    /*z-index: -1;*/
+    top: 6rem;
 }
 
 hr {
@@ -248,15 +227,15 @@ hr {
 }
 
 
-main section p {
+main.main1 section p {
     padding-top: 1vh;
 }
 
-main section:nth-child(5) {
+main.main1 section:nth-child(4) {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    padding: .5rem;
+    padding: .6rem;
 }
 
 #hero {
@@ -284,8 +263,7 @@ section div {
 
 .spotlight div, .discover-container {
     margin: 1vh;
-    background-color: var(--color-secondary);
-   
+    background-color: var(--color-secondary); 
 }
 
 .spotlight div {
@@ -305,7 +283,7 @@ footer {
     background-color: var(--color-paragraph-background);
     position: relative;
     top: 8rem;
-    padding-top: 1rem;
+    padding: 1rem 0;
     font-family: var(--font-paragraph);
     margin-top: 2vh;
 }
@@ -318,21 +296,14 @@ footer img {
     width: 100px;
 }
 
-
-.copyright {
-    padding: .5rem;
+footer#update-data {
+    grid-column: 3;
 }
 
-.copyright p:nth-child(2) {
-    font-size: smaller;
-    padding-top: 1vh;
-}
-.copyright p:nth-child(3) {
-    font-size: smaller;
-}
-footer p {
+footer p{
     text-align: center;
 }
+
 footer a {
     text-decoration: none;  
 }
@@ -345,8 +316,7 @@ footer a:hover {
 /*--------------style for the discover page----------------*/
 
 picture img[data-src]{
-    filter:blur(0.5em);
-    
+    filter:blur(0.5em);  
 }
 
 picture img{
@@ -356,23 +326,26 @@ picture img{
     transition: border .5s;
 }
 
-
-#discover-main {
-    top: 6rem;
+main#discover-main {
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center; 
 }
+
 #around-town {
     max-height: none;
-    
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    margin-top: 2.5vh;
 }
+
 #around-town h2 {
-    padding: 2rem;
+    padding: 3vh 0;
     font-size: 2rem;
 }
+
 #around-town p {
     padding-bottom: 2rem;
     max-width: 80%;
@@ -381,12 +354,13 @@ picture img{
 .discover-container {
     background-color: var(--color-primary);
     max-height: none;
-    
+    padding: 1vh;
+    margin-top: 2.5vh;
 }
 .discover-container div{
-    
     background-color: var(--color-secondary);
     border-radius: 15px;
+    
 }
 
 .label {
@@ -411,6 +385,7 @@ form {
     margin: 0 2rem;
 }
 form h2 {
+    padding-top: 20px;
     text-align: center;
 }
 

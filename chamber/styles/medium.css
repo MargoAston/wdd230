@@ -7,7 +7,7 @@
 
 
     header {
-        max-height: 130px;
+        max-height: 150px;
     }
 
     h1 {
@@ -18,45 +18,32 @@
     font-size: 1rem;
    }
 
-
-    #social-media img {
-        max-height: 35px;
-        
-    }
-
-    #social-media {
-        transition: 1.6s;
-    }
-
     main {
-        top:9rem;
+        top: 9rem;
+    }
+
+    main.main1 {
         display: grid;
         grid-template-columns: 2fr 1fr;  
     }
 
-    #hero, #spotlight,#news, #join {
+    #hero, #spotlight,#news, #join{
         grid-column: 1/3;
     }
-
 
     #news {
         grid-row: 2;
     }
     .spotlight {
         grid-row: 3;
-        flex-direction: row;
     }
-
-    .spotlight div {
-        
-        height: 100%;
-        max-height: 180px;
-    }
-
+ 
     #join {
+        grid-column: 1/3;
+        align-self: center;
         display:block;
         grid-row: 4;
-    }
+    }  
 
     #weather {
         grid-column: 1/3;
@@ -64,48 +51,36 @@
 
     footer {
         display: grid;
-        grid-template-columns: 1fr 4fr; 
-        top:190px;
-        margin-top: 0;
+        grid-template-columns: 1fr 1fr 1fr; 
+        top: 9rem;
     }
-    
-    .contact {
-        grid-column: 2;
-        align-self: center;
-        display:grid;
-        grid-template-columns: 3fr 3fr;
-        align-content:flex-start;
-    }
+
     footer p, footer h3 {
+        text-align: center;
+    }
+
+    #cont-info {
+        padding-left: 1rem;
+        justify-self: center;
+    }
+
+    #cont-info p {
         text-align: left;
     }
 
     footer hr {
-        grid-column: 1/3;
+        grid-column: 1/4;
         grid-row: 2;
     }
 
     .copyright {
-        grid-column: 1/3;
+        grid-column: 1/4;
     }
     .copyright p {
         text-align: center;
     }
 
-    /*style for the discover page*/
-
-    #discover-main {
-        top: 10rem;
-    }
-
-    #around-town {
-        grid-column: 1/3;
-    }
-   
-    .discover-container {
-        grid-row: 2;
-        align-self:flex-start
-    }
+    /*-----------style for the discover page-------*/
 
     #around-town picture img:hover{
         border: solid var(--color-accent3) 20px;
@@ -113,7 +88,7 @@
         transition: border .5s;
     }
 
-    /*style for the join page*/
+    /*--------style for the join page---------*/
 
     form {
         grid-column: 1/3;
