@@ -400,32 +400,42 @@ picture img{
 }
 
 /*------------Style for the join page------------------*/
-#join-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+main#join-main {
+    display: block;
+    margin: auto;
+    font-family: var(--font-paragraph);  
 }
 
 /* FORM */
+form {
+    margin: 0 2rem;
+}
+form h2 {
+    text-align: center;
+}
+
 form fieldset {
     min-width: 350px;
-    margin: 2rem 0;
+    margin: 2rem auto;
     border: 1px solid var(--color-accent4);
     border-radius: 10px;
     padding: .5rem 2%;
-
+    max-width: 40rem;
+    padding-bottom: 1.5rem;
 }
 
 form legend {
     color: var(--color-accent4);
     margin: 0 1rem;
     padding: 0 .5rem;
+    max-width: 20rem;
+    font-size: 1.2rem;
 }
 
 form label.top, form div {
     display:block;
     padding-top: 1rem;
-    font-size: .8rem;
+    font-size: 15x;
 }
 
 form label.top input {
@@ -440,32 +450,37 @@ form label.top input {
     background-color: var(--color-primary);
 }
 
-
 form label.sbs {
     display: block;
     padding: .75rem 0;
-    color: #555;
+    
 }
 
 #bus-description {
     min-height: 100px;
 }
 
+
 form input.submitBtn {
     border: none;
     background-color: #9c2c13;
     color: white;
     border-radius: 1rem;
+    width: 75%;
+    max-width: 340px; 
     padding: .75rem 1.5rem;
-    margin: 0 0 2rem 2%;
-    width: 96%;
-    max-width: 20rem;
 }
+
 form label.top input:required {
     border-left: #9c2c13 solid 6px;
 }
 form label.top input:required:valid {
     border-left: var(--color-accent4) solid 6px;
+}
+
+form div {
+    max-width: 40rem;
+    margin: 2rem auto;
 }
 
 

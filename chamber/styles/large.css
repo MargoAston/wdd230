@@ -185,6 +185,26 @@
         
     }
     
+   /*------------Style for the join page------------------*/
+   main#join-main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+   } 
    
+   form {
+        grid-column: 2/3;
+    }
 
+    form div{
+        padding: 0; 
+        
+    }
+    
+
+   form label.sbs {
+        padding: .5rem 0;
+    
+    }
+
+    
 }
