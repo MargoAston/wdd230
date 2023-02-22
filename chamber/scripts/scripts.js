@@ -1,9 +1,11 @@
 /*This is the date info*/
 //Initialize display elements.
-let dayIs = document.querySelector("#day");
-let dateIs = document.getElementById("date");
+let dayIs = document.querySelector(".day");
+let dateIs = document.querySelector(".date");
+let timeIs = document.querySelector(".time");
 
-//Get values.
+
+//Get day.
 const options = {
     day: "numeric",
     month: "long",
@@ -12,12 +14,33 @@ const options = {
 
 const weekday = ["Sunday, ", "Monday, ", "Tuesday, ", "Wednesday, ", "Thursday, ", "Friday, ", "Saturday, "];
 const d = new Date();
-let todayHome= weekday[d.getDay()];
-console.log(todayHome);
+let todayDay= weekday[d.getDay()];
+
+//Get date.
+let todayDate = new Date().toLocaleDateString("en-UK", options);
+
+//Get time.
+let todayTime = "";
+if (d.getMinutes() < 10) {
+    todayTime = d.getHours() + ":0" + d.getMinutes();
+} else {
+    todayTime = d.getHours() + ":" + d.getMinutes();
+}
+
+let dateAndTime = todayDate + " " + todayTime;
+
+
+console.log(dateAndTime);
 
 //Show values.
-dayIs.textContent = todayHome;
-dateIs.textContent = new Date().toLocaleDateString("en-UK", options);
+dayIs.textContent = todayDay;
+
+dateIs.textContent = todayDate;
+
+timeIs.textContent = todayTime;
+
+//Date and time value for hidden input in form on the join page.
+document.querySelector('#time-now').value = dateAndTime;
 
 
 /*This is the hamburger button info*/

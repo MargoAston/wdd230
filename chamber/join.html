@@ -39,6 +39,9 @@
         <!--This is the Navagation-->
         <!--This is the date line-->
         <div id="today-is">
+            <span class="day"></span>
+            <span class="date"></span>
+            <span class="time"></span>
             <p>Welcome, we're glad you're here!</p>
         </div>
 
@@ -81,7 +84,54 @@
 
     <main id="join-main">
 
-        
+        <!--This is the membership level table-->
+        <dir>
+            <table>
+                <caption>(NP = Non-profit Organization)</caption>
+                <thead>    
+                    <tr>
+                        <th colspan="5" >Lakeside Chamber Membership Level</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th colspan="1">Training</th>
+                        <th colspan="1">Advertising</th>  
+                        <th colspan="1">Event Discounts</th> 
+                        <th colspan="1">Monthly Dues</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gold</td>
+                        <td>included</td>
+                        <td>Premium Logo Placement</td>
+                        <td>included</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Silver</td>
+                        <td>included</td>
+                        <td>Banner Ad</td>
+                        <td>50%</td>
+                        <td>$75</td>
+                    </tr>
+                    <tr>
+                        <td>Bronz</td>
+                        <td>fees vary</td>
+                        <td>e-newsletter</td>
+                        <td>10%</td>
+                        <td>$50</td>
+                    </tr>
+                    <tr>
+                        <td>NP</td>
+                        <td>fees vary</td>
+                        <td>e-newsletter</td>
+                        <td>included</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </dir>
+        </table>
 
             <form method="get" action="thankyou.html">
                 <h2 class="page-title">Join the Lakeside Chamber of Commerce</h2>
@@ -114,16 +164,15 @@
                     <label class="sbs" ><input type="radio" name="memberLevel" value="bronz"> Bronz </label>
                     <label class="sbs" ><input type="radio" name="memberLevel" value="np"> NP (Non-profit) </label>
                 </fieldset>
+
+                <input type="hidden" id="time-now" name="time-now" value="">
+
                 <div>
                 <input type="submit" value = "Join My  Lakeside Chamber" class="submitBtn">
                 </div>
             </form>
-
     </main>
     
-
-
-
     <!--This is the footer-->
     <footer>
         <img class="logo" src="images/logo-tan200.webp" alt="Lakeside Chamber logo">

@@ -7,6 +7,7 @@
     --color-accent2: #c9c19f;
     --color-accent3: #d3cdb2;
     --color-accent4: #3a508e;
+    --color-zebra: hsl(0, 0%, 93%, 1);
 
     --color-paragraph-background: #d3cdb2;
     --color-nav-link: #000000;
@@ -380,6 +381,10 @@ main#join-main {
     font-family: var(--font-paragraph);  
 }
 
+.day, .date, .time {
+    display: none;
+}
+
 /* FORM */
 form {
     margin: 0 2rem;
@@ -458,4 +463,52 @@ form div {
     margin: 2rem auto;
 }
 
+/*Table*/
+
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    font-size: x-small;
+}
+
+table {
+    border-collapse: collapse;
+    width: auto;
+    margin: 50px auto;
+    padding: 10px 10px;
+}
+
+
+th:first-child {
+    background-color: var(--color-accent1);
+    border: 1px solid var(--color-accent1);
+    
+}
+th {
+    background-color: var(--color-accent2);
+    color: white;
+    font-family: var(--font-paragraph);
+    font-weight: 200;
+    border: 1px solid var(--color-accent2);
+    font-size: small;
+    padding: 10px;
+}
+
+th:first-child {
+    background-color: var(--color-accent1);
+    font-size: large;
+}
+
+
+td {
+    border: 1px solid var(--color-zebra); 
+    text-align: center; 
+    padding:5px 10px; 
+    font-size: small;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 
