@@ -151,8 +151,8 @@
     }
    
    form {
-    grid-row: 1;
-    margin-top: 27px;
+        grid-row: 1;
+        margin-top: 27px;
     }
 
     form div{

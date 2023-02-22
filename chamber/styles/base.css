@@ -149,7 +149,7 @@ nav ul {
     padding: 0;
     margin: 0; 
     z-index:25;
-    font-size:small;
+    font-size: small;
     display: none;
     background-color: var(--color-accent2); 
 }
@@ -415,10 +415,10 @@ form legend {
 form label.top, form div {
     display:block;
     padding-top: 1rem;
-    font-size: 15x;
+    font-size: 1rem;
 }
 
-form label.top input {
+form label.top input, form label.top textarea {
     
     display: block;
     font-size: 1rem;
@@ -436,9 +436,6 @@ form label.sbs {
     
 }
 
-#bus-description {
-    min-height: 100px;
-}
 
 
 form input.submitBtn {
@@ -482,12 +479,12 @@ table {
 
 th:first-child {
     background-color: var(--color-accent1);
-    border: 1px solid var(--color-accent1);
+    color: var(--color-secondary);
+    border: 1px solid var(--color-accent4);
     
 }
 th {
     background-color: var(--color-accent2);
-    color: white;
     font-family: var(--font-paragraph);
     font-weight: 200;
     border: 1px solid var(--color-accent2);
@@ -496,7 +493,7 @@ th {
 }
 
 th:first-child {
-    background-color: var(--color-accent1);
+    background-color: var(--color-accent4);
     font-size: large;
 }
 
