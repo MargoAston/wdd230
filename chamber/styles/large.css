@@ -134,15 +134,16 @@
     }
     .discover-container {
         max-height: none;
-        align-self: flex-start;
-        
+        align-self: flex-start;  
     }
+
+    
     
     /*------------Style for the join page------------------*/
     main#join-main {
         display:grid;
         grid-template-columns: 2fr 3fr;
-        margin: 0 25vh;
+        margin: 10vh; 25vh;
         justify-content: center;
     } 
 
