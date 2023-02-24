@@ -34,7 +34,7 @@ header {
     background-color: var(--color-paragraph-background);
     display: grid;
     grid-template-columns: 1fr 2fr 4fr 1fr;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%; 
     max-height: 99.73px;
@@ -212,9 +212,8 @@ nav ul.open {
 }
 
 /*This is the main style*/
-main{
-    position: relative;
-    top: 6rem;
+main {
+    margin: -2px;
 }
 
 hr {
@@ -226,6 +225,7 @@ hr {
 .emoji {
     font-size: 5vh;
 }
+
 
 
 main.main1 section p {
@@ -286,9 +286,8 @@ footer {
     top: 8rem;
     padding: 1rem 0;
     font-family: var(--font-paragraph);
-    margin-top: 2vh;
+    
 }
-
 
 footer img {
     display: block;
@@ -372,8 +371,9 @@ main#discover-main {
 
 .label {
     font-weight: 500;
-    color: var(--color-accent4)
+    color: var(--color-accent4);
 }
+
 
 .label span {
     font-weight: 200;

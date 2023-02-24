@@ -27,6 +27,8 @@ header {
     border-radius: .8em; 
     box-shadow: 10px 10px 10px #6f736f;
     text-align: center;
+    position: sticky;
+    top: 11px;
 }
 
 
@@ -39,8 +41,11 @@ header {
 }
 
 
+
+
 a:link {
     color:#e67084;
+    text-decoration:none;
 }
 a:visited {
     color:#3a508e;
@@ -54,11 +59,14 @@ a:hover {
     float: left; 
     border-radius: .8em;
     border:#6f736f double .25em;
-    width: 18vw;
+    width: 195px;
     transition: width 1s;
     margin-left: 40px;
 }
 
+#one {
+    padding: 1vw;
+}
 #one h2{
     padding-bottom: 0em;
     margin-bottom: 0em;
@@ -71,11 +79,11 @@ hr.dot-line{
 
 .assignment-complete {
     color: black;
-    padding: .5em;
+    padding: .5rem;
     background-color:#cec7a8;
     border-radius: .8em;
     border: #7d7c7a solid .1em;
-    width: 55%;
+    width: 90%;
     margin-bottom: .5em;
     text-align: left;
 }

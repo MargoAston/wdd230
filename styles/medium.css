@@ -3,9 +3,16 @@
 
     header {
         max-width: 80%;
+        max-height: 20%;
         margin: auto;
     }
+
     
+    
+    #one {
+        max-width: 80%;
+        margin: auto;
+    }
    
     #one h2 {
         font-size: 3vmax;
