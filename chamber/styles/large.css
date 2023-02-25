@@ -143,8 +143,7 @@
     main#join-main {
         display:grid;
         grid-template-columns: 2fr 3fr;
-        margin: 10vh; 25vh;
-        justify-content: center;
+    
     } 
 
     table {

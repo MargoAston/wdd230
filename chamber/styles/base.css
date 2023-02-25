@@ -29,6 +29,10 @@
     padding: 0;
 }
 
+body {
+    background-image: url("/images/dots.png");
+    
+}
 
 header {
     background-color: var(--color-paragraph-background);
@@ -213,9 +217,8 @@ nav ul.open {
 
 /*This is the main style*/
 main {
-    margin: -2px;
+    padding-top: 2vh;
 }
-
 hr {
     height: 3px;
     margin: 15px 0;
@@ -225,8 +228,6 @@ hr {
 .emoji {
     font-size: 5vh;
 }
-
-
 
 main.main1 section p {
     padding-top: 1vh;
@@ -251,6 +252,7 @@ main.main1 section:nth-child(4) {
 }
 
 section {
+    background: url("rodeo.webp") blue;
     background-color: var(--color-primary);
     margin: 2vw;
     padding: 4vw;
@@ -335,6 +337,7 @@ picture img{
 main#discover-main {
     align-items: center;
     justify-content: center; 
+    
 }
 
 #around-town {
@@ -385,6 +388,12 @@ main#join-main {
     display: block;
     margin: auto;
     font-family: var(--font-paragraph);  
+    margin: 8vh; 
+    justify-content: center;
+}
+
+.page-title {
+    text-align: center;
 }
 
 #join-main h2 {
@@ -409,6 +418,7 @@ form fieldset {
     padding: .5rem 2%;
     max-width: 40rem;
     padding-bottom: 1.5rem;
+    background-color: var(--color-secondary);
 }
 
 form legend {
@@ -494,7 +504,7 @@ th {
     background-color: var(--color-accent2);
     font-family: var(--font-paragraph);
     font-weight: 200;
-    border: 1px solid var(--color-accent2);
+    border: 1px solid var(--color-accent4);
     font-size: small;
     padding: 10px;
 }
@@ -506,14 +516,18 @@ th:first-child {
 
 
 td {
-    border: 1px solid var(--color-zebra); 
+    border: 1px solid var(--color-accent4); 
     text-align: center; 
     padding:5px 10px; 
     font-size: small;
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: var(--color-zebra);
+}
+
+tr:nth-child(odd) {
+    background-color: var(--color-secondary);
 }
 
 /*------------Style for the thank you page------------------*/
