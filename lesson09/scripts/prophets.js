@@ -72,7 +72,6 @@ const displayProphets = (prophets, service) => {
       portrait.setAttribute('width', '340');
       portrait.setAttribute('height', '440');
 
-      // Build the section by setting all the relevant attributes
       
   
       // Append the section(card) with the created elements
