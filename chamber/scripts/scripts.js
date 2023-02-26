@@ -30,8 +30,6 @@ if (d.getMinutes() < 10) {
 let dateAndTime = todayDate + " " + todayTime;
 
 
-console.log(dateAndTime);
-
 //Show values.
 dayIs.textContent = todayDay;
 
