@@ -34,7 +34,7 @@ const displayProphets = (prophets, service) => {
       let age = document.createElement('p');
       let portrait = document.createElement('img');
 
-      if (prophet.length < 10) {
+      if (prophet.length <= 10) {
         card.classList.add('not-decade');
         
       }
