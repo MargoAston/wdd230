@@ -1,0 +1,76 @@
+{
+    "businesses" : [
+        {
+            "name" : "Mary's Donuts",
+            "address" : ""  ,
+            "phone" : "" ,
+            "website" : "",
+            "icon" : "images/",
+            "member-level" : ""
+        },
+        {
+            "name" : "2",
+            "address" : ""  ,
+            "phone" : "" ,
+            "website" : "",
+            "icon" : "images/",
+            "member-level" : ""
+        },
+        {
+            "name" : "3",
+            "address" : ""  ,
+            "phone" : "" ,
+            "website" : "",
+            "icon" : "images/",
+            "member-level" : ""
+        },
+        {
+            "name" : "4",
+            "address" : ""  ,
+            "phone" : "" ,
+            "website" : "",
+            "icon" : "images/",
+            "member-level" : ""
+        },
+        {
+            "name" : "5",
+            "address" : ""  ,
+            "phone" : "" ,
+            "website" : "",
+            "icon" : "images/",
+            "member-level" : ""
+        },
+        {
+            "name" : "6",
+            "address" : ""  ,
+            "phone" : "" ,
+            "website" : "",
+            "icon" : "images/",
+            "member-level" : ""
+        },
+        {
+            "name" : "7",
+            "address" : ""  ,
+            "phone" : "" ,
+            "website" : "",
+            "icon" : "images/",
+            "member-level" : ""
+        },
+        {
+            "name" : "8",
+            "address" : ""  ,
+            "phone" : "" ,
+            "website" : "",
+            "icon" : "images/",
+            "member-level" : ""
+        },
+        {
+            "name" : "9",
+            "address" : ""  ,
+            "phone" : "" ,
+            "website" : "",
+            "icon" : "images/",
+            "member-level" : ""
+        }
+    ]
+}
