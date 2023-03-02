@@ -57,6 +57,9 @@ const displayProphets = (prophets, service) => {
       h2.textContent = `${prophet.name} ${prophet.lastname}`;
     
       // Calculate age at death
+      if (prophet.death == null) {
+        prophet.death = new Date();
+      }
       let miliSec = (new Date(prophet.death)) - (new Date(prophet.birthdate));
       let year = 1000*60*60*24*365;
       let test =Math.trunc(miliSec / year);
