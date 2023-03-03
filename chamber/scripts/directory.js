@@ -9,16 +9,27 @@ async function getMemberData(url) {
 
 getMemberData(url);
 
-// Images Button
-//document.querySelector("#imagesBtn").addEventListener("click", displayImages);
+// Grid and List Buttons
+const gridButton = document.querySelector("#grid-btn");
+const listButton = document.querySelector("#list-btn");
+const display = document.querySelector("article");
 
-// List Button
-document.querySelector("#listBtn").addEventListener("click", displayList);
+gridButton.addEventListener("click", () => {
+  display.classList.add("grid");
+  display.classList.remove("list");
+});
+
+listButton.addEventListener("click", displayList);
+
+function displayList() {
+  display.classList.add("list");
+  display.classList.remove("grid");
+}
 
 /*This function will be hoisted (the process whereby the interpreter appears to move the declaration of functions, variables or classes to the top of their scope, prior to execution of the code)*/
 
 const displayMembers = (members, service) => {
-    const cards = document.querySelector('div.cards'); // select the output container element
+    const cards = document.querySelector('article'); // select the output container element
   
     members.forEach((member) => {
       // Create elements to add to the div.cards element
@@ -45,7 +56,7 @@ const displayMembers = (members, service) => {
       icon.setAttribute('height', '30px');
       icon.setAttribute('class', 'icon')
       nameline.setAttribute('class', 'name');
-      card.setAttribute('class', 'card-container')
+    
 
   
       // Append the section(card) with the created elements
@@ -61,34 +72,3 @@ const displayMembers = (members, service) => {
     }) // end of forEach loop
 
 } // end of function expression
-
-function displayList(){
-  console.log("in displayList()");
-  //remove icon from card
-  const icons = document.querySelectorAll(".icon");
-  [].forEach.call(icons, function(img) {
-     img.style.display = "none";
-  });
-
-  //Set cards to display in block
-  const cardContainer = document.querySelector(".cards");
-  cardContainer.style.display = "block";
-
-  //Align card text to the left
-  const cards = document.querySelectorAll(".card-container");
-  [].forEach.call(cards, function(section) {
-     section.style.textAlign = "left";
-  });
-  
-  //Align card contact info to the left
-  const info = document.querySelectorAll(".name");
-  [].forEach.call(info, function(div) {
-    div.style.display = "flex";
-    div.style.justifyContent = "flex-start"
-    
-  });
-  
-
- 
-
-}

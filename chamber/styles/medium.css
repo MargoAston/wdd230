@@ -104,8 +104,29 @@
     }
 
     /*------------Style for the Directory page------------------*/
-    .cards {
+    .grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+    }
+
+    .list {
+        margin-top: 2rem;
+        border: black solid 1px;
+    }
+
+    .list section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        margin: 0;
+        padding: 2rem;
+        
+    }
+
+    .list p:nth-child(3) {
+        text-align: center;
+    }
+
+    .list section:nth-child(even) {
+        background-color: white;
     }
 }

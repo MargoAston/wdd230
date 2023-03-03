@@ -29,7 +29,7 @@
 }
 
 body {
-    /*background-image: url("../images/dots.png");*/
+    background-image: url("/images/dots.png");
    
 }
 
@@ -555,15 +555,16 @@ tr:nth-child(odd) {
 /*------------Style for the Directory page------------------*/
 
 #directory-main {
-    margin-top: 4rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    align-items: center;
-    justify-content: center;
-
+    margin: 4rem 2rem 0rem 2rem; 
+    text-align: center;
 }
 
-.cards {
+.sub-heading h2{
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+.grid {
     border-radius: 9px;
     box-shadow: #888888 0 0 30px 10px;
     background-color: var(--color-accent4);
@@ -571,10 +572,12 @@ tr:nth-child(odd) {
     padding: .5rem;
 }
 
-.card-container {
-    margin: 0.5rem;
-    padding: 0.7rem;
+.list {
+    display: flex;
+    flex-direction: column;
 }
+
+
 
 .name {
     display: flex;
@@ -583,6 +586,20 @@ tr:nth-child(odd) {
     margin-bottom: .4rem;
     padding: 0px;
 }
+
+.list .name .icon{
+    display: none;
+}
+
+.list .name {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.list section {
+    text-align: left;
+}
+
 
 
 #directory-main img {
