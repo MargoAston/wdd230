@@ -64,6 +64,7 @@ const displayProphets = (prophets, service) => {
       let year = 1000*60*60*24*365;
       let test =Math.trunc(miliSec / year);
       age.textContent = `Age: ${test}`;
+      
       p.textContent = `Date of Birth: ${prophet.birthdate}`;
       place.textContent = `Place of Birth: ${prophet.birthplace}`;
 

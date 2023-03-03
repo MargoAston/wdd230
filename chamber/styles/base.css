@@ -1,4 +1,3 @@
-
 :root {
     /*These are the colors*/
     --color-primary: #EFEFEF;
@@ -31,7 +30,7 @@
 
 body {
     background-image: url("/images/dots.png");
-    
+   
 }
 
 header {
@@ -54,11 +53,11 @@ header a {
     width: 5rem;
     transition: width 0.4s;
 }
+
 a:hover {
     opacity: .8;
     transform: scale(1.1);
 }
-
 
 h1 {
     grid-column: 2/4;
@@ -110,7 +109,6 @@ p {
 #container {
     display: inline-block;
     max-height: 35px;
-
 }
 
 .bar1, .bar2, .bar3 {
@@ -120,6 +118,7 @@ p {
     margin: 6px 0;
     transition: 0.4s;
 }
+
 .change .bar1 {
     transform: translate(0, 10px) rotate(-45deg);
 }
@@ -217,7 +216,8 @@ nav ul.open {
 
 /*This is the main style*/
 main {
-    padding-top: 2vh;
+    margin-top: -1rem;
+    margin-bottom: -7rem;
 }
 hr {
     height: 3px;
@@ -335,9 +335,9 @@ picture img{
 }
 
 main#discover-main {
+    margin-top: 3.5rem;
     align-items: center;
-    justify-content: center; 
-    
+    justify-content: center;   
 }
 
 #around-town {
@@ -368,8 +368,7 @@ main#discover-main {
 }
 .discover-container div{
     background-color: var(--color-secondary);
-    border-radius: 15px;
-    
+    border-radius: 15px; 
 }
 
 .label {
@@ -388,7 +387,7 @@ main#join-main {
     display: block;
     margin: auto;
     font-family: var(--font-paragraph);  
-    margin: 8vh; 
+    margin-top: 8vh; 
     justify-content: center;
 }
 
@@ -535,13 +534,14 @@ tr:nth-child(odd) {
 
 #thanks-main {
     position: relative;
-    margin: 10vh auto;
+    margin-top: 13vh;
 }
 
 #thanks-main div {
     margin: 0 auto;
     text-align: center;
 }
+
 #thanks-main h2 {
     color: var(--color-accent4);
     font-family: var(--font-heading);
@@ -556,4 +556,43 @@ tr:nth-child(odd) {
     top: 70vh;
     width: 100%;
     height: 30%;
+}
+
+/*------------Style for the Directory page------------------*/
+
+#directory-main {
+    margin-top: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    align-items: center;
+    justify-content: center;
+
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+    border-radius: 9px;
+    box-shadow: #888888 0 0 30px 10px;
+    background-color: var(--color-accent4);
+    
+   
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#directory-main section, #directory-main div {
+    margin: .5rem;
+    padding: 0.5rem;
+}
+
+#directory-main img {
+    margin: .5rem;
+}
+
+.contact-info {
+    overflow-wrap: break-word;
 }

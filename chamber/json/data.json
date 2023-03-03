@@ -1,11 +1,11 @@
 {
-    "businesses" : [
+    "members" : [
         {
             "name" : "Mary's Donuts",
             "address" : "1010 Main Ave, Lakeside, CA 92040"  ,
             "phone" : "619 334-5272" ,
             "website" : "https://marysdonuts.com/",
-            "icon" : "images/logo.marys.png",
+            "icon" : "images/logo-marys.png",
             "member-level" : 1
         },
         {
@@ -61,15 +61,15 @@
             "address" : "9720 Winter Garden Blvd"  ,
             "phone" : "619 353-0261" ,
             "website" : "https://www.groceryoutlet.com/",
-            "icon" : "images/logo.grocery-outlet.png",
+            "icon" : "images/logo-grocery-outlet.png",
             "member-level" : 3
         },
         {
-            "name" : "East County Style - Ron Cook Media",
+            "name" : "East County Style",
             "address" : "9124 Hillman Way, Lakeside, CA 92040"  ,
             "phone" : "619 721-3282" ,
             "website" : "https://www.eastcountystyle.com/",
-            "icon" : "images/logo.east-county-style",
+            "icon" : "images/logo-east-county-style.png",
             "member-level" : 2
         }
     ]
