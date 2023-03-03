@@ -250,7 +250,7 @@ main.main1 section:nth-child(4) {
 }
 
 section {
-    background: url("rodeo.webp") blue;
+    
     background-color: var(--color-primary);
     margin: 2vw;
     padding: 4vw;
