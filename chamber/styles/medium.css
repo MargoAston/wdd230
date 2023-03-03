@@ -102,4 +102,10 @@
         width: 100%;
         height: 20%;
     }
+
+    /*------------Style for the Directory page------------------*/
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+    }
 }
