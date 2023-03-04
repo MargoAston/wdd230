@@ -558,9 +558,15 @@ tr:nth-child(odd) {
     text-align: center;
 }
 
-.sub-heading h2{
+#sub-heading {
     padding: 1rem;
-    font-size: 3rem;
+    font-size: 3.5rem;
+}
+
+.sub-heading {
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #grid-btn, #list-btn {
@@ -631,7 +637,24 @@ tr:nth-child(odd) {
 }
 
 button {
-    border: none;
+    border: black solid 1.5px;
+    height: 40px;
+    width: 50px;
     font-size: 20px;
-    background-color: var(--color-accent);
+    background-color: var(--color-accent3);
+    line-height: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#list-btn {
+    line-height: 6px;
+    
+}
+#grid-btn {
+    font-size: 15px;
+    line-height: 6px;
+    
 }
