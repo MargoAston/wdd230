@@ -29,8 +29,7 @@
 }
 
 body {
-    background-image: url("/images/dots.png");
-   
+    background-image: url("../images/dots.png");  
 }
 
 header {
