@@ -42,7 +42,7 @@ const displayMembers = (members, service) => {
 
       let address = document.createElement('p');
       let phone = document.createElement('p');
-      let website = document.createElement('p');
+      let website = document.createElement('a');
       
       
 
@@ -56,6 +56,7 @@ const displayMembers = (members, service) => {
       icon.setAttribute('height', '30px');
       icon.setAttribute('class', 'icon')
       nameline.setAttribute('class', 'name');
+      website.setAttribute('href', member.website);
     
 
   
