@@ -1,0 +1,56 @@
+:root {
+    /*These are the colors*/
+    --color-primary: #EFEFEF;
+    --color-accent: #d3cdb2;
+
+    /*These are the fonts*/
+    --font-heading: Raleway, Verdana, sans-serif;
+    --font-subheading: Raleway, Verdana, sans-serif;
+    --font-subheading2: Raleway, Verdana, sans-serif;
+    --font-paragraph: Raleway, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-primary);
+    margin: 3rem;
+    text-align: center;
+    font-family: var(--font-paragraph);
+}
+
+header, footer{
+    background-color: var(--color-accent); 
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h1 {
+    
+    font-family: var(--font-heading);
+    font-weight: 300;
+    transition: font-size 2s;
+    font-size: 3vw;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+main {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2vw;
+    padding-top: 2rem;
+}
+
+
