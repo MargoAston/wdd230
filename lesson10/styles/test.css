@@ -1,7 +1,8 @@
 :root {
     /*These are the colors*/
     --color-primary: #EFEFEF;
-    --color-accent: #d3cdb2;
+    --color-accent1: #d3cdb2;
+    --color-accent2: #3a508e;
 
     /*These are the fonts*/
     --font-heading: Raleway, Verdana, sans-serif;
@@ -17,29 +18,58 @@
 
 body {
     background-color: var(--color-primary);
-    margin: 3rem;
+    margin: 6rem;
     text-align: center;
     font-family: var(--font-paragraph);
 }
 
 header, footer{
-    background-color: var(--color-accent); 
+    background-color: var(--color-accent1); 
     padding: 2rem;
     text-align: center;
     border-radius: 10px;
 }
 
+footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 h1 {
-    
     font-family: var(--font-heading);
     font-weight: 300;
     transition: font-size 2s;
-    font-size: 3vw;
+    font-size: 3.5vw;
+    margin-bottom: 1.5rem;
 }
 
-button {
-    margin-top: 1rem;
-    padding: 1rem;
+h2 {
+    font-family: var(--font-subheading2);
+    font-weight: 300;
+    font-size: 12px;
+    padding-top: 2rem;
+}
+
+p {
+    font-size: 2.5vw;
+    padding: 5px;
+    transition: font-size 2s;
+}
+
+footer p {
+    font-size: 1.5vh;
+}
+a:hover {
+    color: white;
+    background-color: var(--color-accent2);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-accent2);
+    margin: 2rem;
+    padding: .5rem 1rem;
+    background-color: var(--color-primary);
     border-radius: 30px;
 }
 
@@ -48,9 +78,6 @@ main {
     margin-bottom: 2rem;
 }
 
-h2 {
-    font-size: 2vw;
-    padding-top: 2rem;
-}
+
 
 
