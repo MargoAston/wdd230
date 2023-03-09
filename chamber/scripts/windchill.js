@@ -7,7 +7,7 @@ const wind = document.querySelector('#wind-speed');
 
 // asynchronous function that will use fetch() to request the given api url and then try to convert the response using a JSON parser that is built-in
 async function apiFetch() {
-    const url = 'https://api.openweathermap.org/data/2.5/weather?q=lakeside,CA&appid=e069384a0b1b43e6c4d948c86089b178&units=imperial&units=imperial';
+    const url = 'https://api.openweathermap.org/data/2.5/weather?q=lakeside&appid=e069384a0b1b43e6c4d948c86089b178&units=imperial&units=imperial';
 
     
     try {

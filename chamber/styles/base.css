@@ -29,7 +29,7 @@
 }
 
 body {
-    background-image: url("../images/dots.png");  
+    background-image: url("../images/dots.png");
 }
 
 header {
@@ -221,9 +221,7 @@ hr {
     background: var(--color-accent4);
 }
 
-.emoji {
-    font-size: 5vh;
-}
+
 
 main.main1 section p {
     padding-top: 1vh;
@@ -277,6 +275,7 @@ section div {
     display: none;
 }
 
+
 /*This is the footer style*/
 footer {
     background-color: var(--color-paragraph-background);
@@ -309,6 +308,11 @@ footer a {
 footer a:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+
+#weather-credit {
+    padding-top: 10px;
+    font-size: 12px;
 }
 
 /*--------------style for the discover page----------------*/

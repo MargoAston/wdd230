@@ -76,6 +76,9 @@
     .copyright p {
         text-align: center;
     }
+    #weather-credit {
+        grid-column: 1/4;
+    }
 
     /*-----------style for the discover page-------*/
 
