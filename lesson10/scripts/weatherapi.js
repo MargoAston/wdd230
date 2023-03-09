@@ -28,8 +28,33 @@ async function apiFetch() {
   function displayResults(weatherData) {
     currentTemp.innerHTML = `<strong> ${weatherData.main.temp.toFixed(0)}</strong>`;
 
-    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+    let iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
+
+    if (desc == 'snow') {
+      iconsrc = `images/snow.png`;
+    }
+    else if(desc == 'clear sky') {
+      iconsrc = `images/sunny.png`;
+    }
+    else if(desc == 'night') {
+      iconsrc = `images/night.png`;
+    }
+    else if(desc == 'few clouds') {
+      iconsrc = `images/partly-cloudy.png`;
+    }
+    else if(desc == 'sleet') {
+      iconsrc = `images/sleet.png`;
+    }
+    else if(desc == 'light snow') {
+      iconsrc = `images/snow-flurries.png`;
+    }
+    else if(desc == 'thunderstorm with light rain') {
+      iconsrc = `images/thunderstorms-2.png`;
+    }
+    else if(desc == 'windy') {
+      iconsrc = `images/windy.png`;
+    }
 
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
