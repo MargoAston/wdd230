@@ -335,9 +335,11 @@ picture img{
 }
 
 main#discover-main {
-    margin-top: 3.5rem;
+    margin-top: 1rem;
     align-items: center;
-    justify-content: center;   
+    justify-content: center; 
+    text-align: center;
+      
 }
 
 #around-town {
@@ -386,8 +388,9 @@ main#discover-main {
 main#join-main {
     display: block;
     font-family: var(--font-paragraph);  
-    margin-top: 8vh; 
+    margin-top: 1rem; 
     justify-content: center;
+    text-align: center;
 }
 
 .page-title {
@@ -401,7 +404,7 @@ main#join-main {
 
 /* FORM */
 form {
-    margin: 0 2rem;
+    margin: 0 2vw;
 }
 form h2 {
     padding-top: 20px;
@@ -561,12 +564,12 @@ tr:nth-child(odd) {
     text-align: center;
 }
 
-#sub-heading {
+.sub-heading {
     padding: 1rem;
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
-.sub-heading {
+.display-btn {
     display:flex;
     align-items: center;
     justify-content: center;

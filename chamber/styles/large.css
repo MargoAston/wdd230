@@ -4,7 +4,7 @@
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: 400px;  
-        margin-top: 1.5vh;
+        margin-top: 3.5rem;
     }
 
     header p {
@@ -128,9 +128,14 @@
         grid-template-columns: 1fr 2fr 1fr;
     }
 
+    #discover-main h2 {
+        grid-row: 1;
+        grid-column: 1/4;
+    }
+
     #around-town  {
         grid-column: 2;
-        grid-row: 1;
+        grid-row: 2;
     }
     .discover-container {
         max-height: none;
@@ -143,7 +148,6 @@
     main#join-main {
         display:grid;
         grid-template-columns: 2fr 3fr;
-    
     } 
 
     table {
