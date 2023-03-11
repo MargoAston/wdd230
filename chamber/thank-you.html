@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--This is the font info-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;800;900&family=Rancho&family=Sacramento&display=swap" rel="stylesheet">
+     <!--This is the font info-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;800;900&family=Rancho&family=Sacramento&display=swap" rel="stylesheet">
 
     <!--Reference to the favicon-->
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 
-    <title>Directory</title>
-    <meta name="description" content="This page demonstrates JSON file manipulation.">
+    <title>Thank You</title>
+    <meta name="description" content="This page is a response from the application form submit button and thanks the new member for a message.">
 
     <!--Style Sheets-->
     <link href="styles/normalize.css" rel="stylesheet">
@@ -25,10 +25,7 @@
     <!-- enhance-desktop -->
     <link href="styles/large.css" rel="stylesheet">
 </head>
-
 <body>
-    <!--This is the Header-->
-    
     <header>
         <a href="index.html">
             <img class="logo" src="images/logo-tan200.webp" alt="Lakeside Chamber logo">
@@ -40,10 +37,9 @@
         <!--This is the Navagation-->
         <!--This is the date line-->
         <div id="today-is">
-            <span class="day">day</span>
-            <span class="date">date</span>
+            <span class="day"></span>
+            <span class="date"></span>
             <span class="time"></span>
-            
         </div>
 
         <nav>
@@ -61,7 +57,7 @@
                     <a href="discover.html">Discover</a>
                 </li>
                 <li>
-                    <a href="directory.html" class="active">Directory</a>
+                    <a href="directory.html">Directory</a>
                 </li>
                 <li>
                     <a href="join.html">Join</a>
@@ -85,17 +81,19 @@
         </nav>
     </header>
 
-    <main id="directory-main">
-        
-        <h2 class="sub-heading">Directory</h2>
-        <div class="display-btn">
-        <button id="grid-btn">🔲 🔲</button>
-        <button id="list-btn">·⏤ ·⏤ ·⏤</button>
+    <main id="thanks-main">
+        <div>
+            <h2>Thank You!</h2>
+            <hr>
+            <br>
+            <p>You will recieve an email response within one business day.</p>
+            <br>
+            <p>Well, actually... this will require some backend programing... So, you will have to wait until next semester 😂</p>
         </div>
-        <article class="grid"></article>
     </main>
 
-    <footer>
+    <!--This is the footer-->
+    <footer id="thanks-footer">
         <img class="logo" src="images/logo-tan200.webp" alt="Lakeside Chamber logo">
         
         
@@ -112,13 +110,11 @@
         </div>
 
         <hr>
-            <p id="copyright"></p>
-            <p>WDD230 Project</p>
-            <p id="update-date"></p>
+        <p id="copyright"></p>
+        <p>WDD230 Project</p>
+        <p id="update-date"></p>
     </footer>
 
-    <script src="scripts/scripts.js"></script>
-    <script src="scripts/directory.js"></script>
+    <script src="scripts/scripts.js"></script> 
 </body>
-
 </html>

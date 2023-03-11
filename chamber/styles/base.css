@@ -48,8 +48,8 @@ header a {
 }
 
  /*This is the logo*/
-#logo {
-    width: 5rem;
+.logo {
+    width: 7rem;
     transition: width 0.4s;
 }
 
@@ -665,4 +665,73 @@ button {
 
 #grid-btn {
     font-size: 15px;
+}
+
+/*------------Style for the Contact page------------------*/
+#contact-main {
+    margin: 1rem 2rem -7rem; 
+    text-align: center;
+}
+
+.contact-card {
+    box-shadow: 5px 5px 5px #acacaa;
+    max-width: 35vw;
+    margin: 2vh auto;
+    text-align: center;
+    font-family: arial;
+    background-color: var(--color-accent3);
+}
+
+.contact-card img {
+    width: 100%;
+}
+
+.dark {
+    margin: 0;
+    padding: 2vh 0;
+    background-color: var(--color-accent4);
+    color: white
+}
+
+.contact-card hr, #thanks-main hr {
+    height: 0px;
+    margin: 10px auto;
+    width: 40%;
+    background: white;
+    justify-content: center;
+}
+
+.address {
+    margin: 2vh 0;
+    padding-bottom: 3vh;
+}
+
+.logo-box {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.logo-box:hover {
+    transform: scale(1.1);
+}
+
+.dark ul {
+    line-height: 25px;
+    display: inline-block;
+    text-align: left;
+    list-style-type: square;
+    padding-left: 30px;
+}
+
+#message{
+    margin: 0 auto;
+}
+
+#contact-main form #gen-inquiry {
+    border-left: #9c2c13 solid 6px;
+}
+
+#contact-main .submitBtn:hover {
+    cursor: pointer;
+    transform: scale(1.1)
 }

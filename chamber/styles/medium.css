@@ -1,6 +1,6 @@
 /*If the viewport is 700px or wider*/
 @media only screen and (min-width: 700px) {
-    #logo {
+    .logo {
         width: 10rem;
         transition: width 0.4s;
     }

@@ -5,30 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
     <!--This is the font info-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;800;900&family=Rancho&family=Sacramento&display=swap" rel="stylesheet">
 
+
     <!--Reference to the favicon-->
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 
-    <title>Directory</title>
-    <meta name="description" content="This page demonstrates JSON file manipulation.">
+    <title>Contact</title>
+    <meta name="description" content="This page contains basic contact information for the Lakesdie Chamber on commerce.">
 
     <!--Style Sheets-->
     <link href="styles/normalize.css" rel="stylesheet">
     <!-- phone-default -->
     <link href="styles/base.css" rel="stylesheet">
+    
     <!-- enhance-tablet -->
     <link href="styles/medium.css" rel="stylesheet">
     <!-- enhance-desktop -->
     <link href="styles/large.css" rel="stylesheet">
 </head>
 
+
 <body>
     <!--This is the Header-->
-    
     <header>
         <a href="index.html">
             <img class="logo" src="images/logo-tan200.webp" alt="Lakeside Chamber logo">
@@ -36,8 +41,10 @@
 
         <h1>Lakeside, CA</h1>
         <p>Chamber of Commerce</p>
-        
+
+     
         <!--This is the Navagation-->
+       
         <!--This is the date line-->
         <div id="today-is">
             <span class="day">day</span>
@@ -45,7 +52,7 @@
             <span class="time"></span>
             
         </div>
-
+        
         <nav>
             <!--Animated hamburger button-->
             <div id="container" onclick="toggleMenu(this)">
@@ -55,19 +62,19 @@
             </div>
             <ul id="primary-nav">
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html" >Home</a>
                 </li>
                 <li>
                     <a href="discover.html">Discover</a>
                 </li>
                 <li>
-                    <a href="directory.html" class="active">Directory</a>
+                    <a href="directory.html">Directory</a>
                 </li>
                 <li>
                     <a href="join.html">Join</a>
                 </li>
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a href="#" class="active">Contact</a>
                 </li>  
                 <li>
                     <a href="https://www.facebook.com/lakeside.chamber">
@@ -82,22 +89,68 @@
                     </span>Instagram</a>
                 </li>   
             </ul>
-        </nav>
+        </nav> 
     </header>
 
-    <main id="directory-main">
+    <main id="contact-main">
+        <h2 class="sub-heading">Contact Us</h2>
         
-        <h2 class="sub-heading">Directory</h2>
-        <div class="display-btn">
-        <button id="grid-btn">🔲 🔲</button>
-        <button id="list-btn">·⏤ ·⏤ ·⏤</button>
+        <div class="contact-card">
+            <img src="images/lake.webp" alt="Lindo Lake">
+            <h2>Lakeside Chamber of Commerce</h2>
+            <div class="logo-box">
+            <a href="index.html">
+                <img class="logo" src="images/logo-tan200.webp" alt="Lakeside Chamber logo">
+            </a>
+            </div>
+
+            <div class="dark">
+                <h3>Executive Board </h3>
+                <hr>
+                <ul>
+                    <li>Joel Scalzitti - Chaiman</li>
+                    <li>Frank Hilliker - 1st Vice Chair</li>
+                    <li>Mike McGrath - 2nd Vice Chair</li>
+                    <li>Doug Rains - Chair of Finances</li>
+                </ul>
+            </div>
+
+            <div class="address">
+                <p>Office Hours: 9:00am - 5:pm M-Th</p>
+                <hr>
+                <p>9580 Carlton Hills Blvd</p>
+                <p>Santee, CA 92071</p>
+                <hr>
+                <p>619-562-0252</p>
+                <hr>
+                <p>maston@cmcharter.org</p>
+            </div>
         </div>
-        <article class="grid"></article>
+
+        <form method="get" action="thank-you.html">
+            <div id="message">
+            <fieldset>
+                <legend>We'd love to hear from you.</legend>
+                <label class="top" >First Name* <input type="text" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required></label>
+                    <label class="top">Cell Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                    <label class="top" >Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    <label class="top">General Inquiry*<textarea name="businessDescription" required id="gen-inquiry" rows="4" placeholder="Ask a question, share an idea, voice a concern . . ."></textarea></label>
+
+            </fieldset>
+
+            <div id="message-btn">
+                <input type="submit" value = "Send My Message" class="submitBtn">
+            </div>
+            </div>
+        </form>
+
+
     </main>
 
-    <footer>
+     <!--This is the footer-->
+     <footer>
         <img class="logo" src="images/logo-tan200.webp" alt="Lakeside Chamber logo">
-        
         
         <h3>Lakeside Chamber of Commerce - CA</h3>
         <div id="cont-info">
@@ -106,7 +159,7 @@
                     <span>📍</span>  
                 </a>
                  9924 Vine ST., Lakeside, CA 92040
-            </p><!--This is the footer-->
+            </p>
             <p class="phone"><span>📞</span> 619.561.1031</p>
             <p class="email"><span>📧</span> info@lakesidechamber.org</p>
         </div>
@@ -115,10 +168,9 @@
             <p id="copyright"></p>
             <p>WDD230 Project</p>
             <p id="update-date"></p>
+    
     </footer>
 
     <script src="scripts/scripts.js"></script>
-    <script src="scripts/directory.js"></script>
 </body>
-
 </html>
