@@ -42,6 +42,37 @@
         grid-row: 4;
     }  
 
+    #join h2 {
+        display: none;
+    }
+
+    #join #join-btn {
+        align-self: center;
+        margin: 0 auto;
+        width: 20vh;
+        border: none;
+        font-size: 24px;
+        font-weight: 300;
+        box-shadow: 5px 5px 5px gray;
+        margin-bottom: 5px;
+        padding: .7vh 0;
+        border-radius: 8px;
+        
+        font-family: var(--font-paragraph);
+    }
+
+    #join a {
+        color: var(--color-accent4);
+        text-decoration: none;
+        font-size: 30px;
+       
+        
+    }
+
+    #join #join-btn:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
     #weather {
         grid-column: 1/3;
     }

@@ -276,6 +276,7 @@ section div {
 }
 
 
+
 /*This is the footer style*/
 footer {
     background-color: var(--color-paragraph-background);
@@ -576,10 +577,10 @@ tr:nth-child(odd) {
     justify-content: center;
 }
 
-#grid-btn, #list-btn {
+#grid-btn:hover, #list-btn:hover {
     cursor: pointer;
     transform: scale(1.1);
-    margin: 1rem;
+    
 }
 
 .grid {
@@ -657,12 +658,11 @@ button {
     
 }
 
-#list-btn {
+#list-btn, #grid-btn {
     line-height: 6px;
-    
+    margin: 1rem;
 }
+
 #grid-btn {
     font-size: 15px;
-    line-height: 6px;
-    
 }
