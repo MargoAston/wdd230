@@ -404,8 +404,9 @@ main#join-main {
 
 /* FORM */
 form {
-    margin: 0 2vw;
+    margin: 0 2vh 0;
 }
+
 form h2 {
     padding-top: 20px;
     text-align: center;
