@@ -704,6 +704,7 @@ button {
 .address {
     margin: 2vh 0;
     padding-bottom: 3vh;
+    overflow-wrap: break-word;
 }
 
 .logo-box {
