@@ -54,7 +54,7 @@ const displayMembers = (members, service) => {
       //Build the image icon by setting the relevant attributes
       icon.setAttribute('src', member.icon);
       icon.setAttribute('height', '30px');
-      icon.setAttribute('class', 'icon')
+      icon.setAttribute('class', 'icon');
       nameline.setAttribute('class', 'name');
       website.setAttribute('href', member.website);
     
