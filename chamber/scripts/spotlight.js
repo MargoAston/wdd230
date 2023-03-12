@@ -3,7 +3,7 @@ const url = 'json/data.json';
 async function getMemeberData(url) {
     const response = await fetch(url);
     const data = await response.json();
-    console.table(data.members);
+    //console.table(data.members);
     displaySpotlightMembers(data.members);
 }
 
@@ -15,17 +15,26 @@ const displaySpotlightMembers = (members, service) => {
     const spotlightCards = document.querySelector('article'); // select the output container element
 
     let displayCount = 0; //Number of spotlight companies being displayed
+    let displayed = [];   //This will hold the companies that are currently displayed
 
     while (displayCount < 3) {
-        // Get a random integer between 0 and 8 and use is for the member index
+        // Get a random integer between 0 and 8 and use it for the member index
         let featuredIndex = Math.floor(Math.random() * 9)
-        console.log(featuredIndex);
+        console.log("the index is", featuredIndex);
 
-        // Check the membership level of the member in at that index 
+        // Check the membership level of the member in that index 
         let level = `${members[featuredIndex].level}`;
 
-        if (level <= 2) {
+        // Check to see if the business is already being displayed
+        let isFound = displayed.includes(featuredIndex);
+        console.log("We found the business", isFound);
+        
+        
+
+        if ((level <= 2)  && (isFound == false)) { 
             displayCount += 1 //Increment the number of spotlighted companies being displayed
+            displayed.push(featuredIndex);
+            console.log("this is the displayed businesses:", displayed);
             displayFeaturedMember(featuredIndex);
         }
 
