@@ -39,17 +39,23 @@ const displaySpotlightMembers = (members, service) => {
                 let spacer = document.createElement('hr');
                 let address = document.createElement('p');
                 let phone = document.createElement('p');
+                let website = document.createElement('a');
 
                 // Fill elements with data from the JSON file
                 h2.innerHTML = `${members[index].name}`;
                 icon.innerHTML = `${members[index].icon}`;
                 address.innerHTML = `${members[index].address}`;
                 phone.innerHTML = `${members[index].phone}`;
+                website.innerHTML = `${members[index].website}`;
 
-                // Set the attributes for the icon
+                // Set the attributes for the icon, spotlightCard, website
                 icon.setAttribute('src', members[index].icon);
                 icon.setAttribute('height', '30px');
                 icon.setAttribute('class', 'spotlight-icon')
+
+                spotlightCard.setAttribute('class', 'spotCard')
+
+                website.setAttribute('href', members[index].website);
 
                 // Add the new elements to the card
                 spotlightCard.appendChild(h2);
@@ -57,6 +63,7 @@ const displaySpotlightMembers = (members, service) => {
                 spotlightCard.appendChild(spacer);
                 spotlightCard.appendChild(address);
                 spotlightCard.appendChild(phone);
+                spotlightCard.appendChild(website);
 
                 //Add the card to the cards container
                 spotlightCards.appendChild(spotlightCard);
