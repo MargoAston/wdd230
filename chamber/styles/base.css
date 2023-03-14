@@ -71,6 +71,12 @@ h1 {
     padding-top: .5vh;
 }
 
+@media only screen and (max-width: 400px) {
+    header p {
+        display: none;
+    }
+}
+
 header p {
     grid-column: 2/4;
     grid-row: 3;
@@ -138,7 +144,7 @@ nav {
     grid-row: 3/6;
     text-align:center; 
     font-family: var(--font-subheading2);
-    font-weight: 100;
+    /*font-weight: 100;*/
     margin-right: 1vw;
     margin-left: 3px;
     min-width: 80px;
@@ -163,7 +169,7 @@ nav a {
     border-top: 1px solid rgba(0,0,0,0.5);
     background-color: var(--color-nav-background);
     font-family: var(--font-subheading2);
-    font-weight: 100;  
+    font-weight: 300;  
 }
 
 span img {
@@ -482,7 +488,7 @@ form div {
 caption {
     padding: 10px;
     caption-side: bottom;
-    font-size: x-small;
+    font-size: 12px;
 }
 
 table {
