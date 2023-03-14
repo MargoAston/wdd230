@@ -59,7 +59,7 @@ const displaySpotlightMembers = (members, service) => {
                 // Set the attributes for the icon, spotlightCard, website
                 icon.setAttribute('src', members[index].icon);
                 icon.setAttribute('alt', 'spotlight business')
-                icon.setAttribute('height', '30px');
+                //icon.setAttribute('height', '30px');
                 icon.setAttribute('class', 'spotlight-icon')
 
                 spotlightCard.setAttribute('class', 'spotCard')
