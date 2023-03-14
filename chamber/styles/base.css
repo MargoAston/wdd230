@@ -334,7 +334,7 @@ picture img{
     transition: border .5s;
 }
 
-#discover-img img {
+.discover-img img {
     object-fit: cover;
     width: 70%;
     height: auto;
