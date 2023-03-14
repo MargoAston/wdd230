@@ -20,21 +20,20 @@ const displaySpotlightMembers = (members, service) => {
     while (displayCount < 3) {
         // Get a random integer between 0 and 8 and use it for the member index
         let featuredIndex = Math.floor(Math.random() * 9)
-        console.log("the index is", featuredIndex);
+       
 
         // Check the membership level of the member in that index 
         let level = `${members[featuredIndex].level}`;
 
         // Check to see if the business is already being displayed
         let isFound = displayed.includes(featuredIndex);
-        console.log("We found the business", isFound);
+        
         
         
 
         if ((level <= 2)  && (isFound == false)) { 
             displayCount += 1 //Increment the number of spotlighted companies being displayed
             displayed.push(featuredIndex);
-            console.log("this is the displayed businesses:", displayed);
             displayFeaturedMember(featuredIndex);
         }
 
