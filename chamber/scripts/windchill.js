@@ -3,7 +3,7 @@ const currentTemp = document.querySelector('#temperature');
 const weatherIcon = document.querySelector('#weather .emoji');
 const captionDesc = document.querySelector('.emoji-caption');
 const wind = document.querySelector('#wind-speed');
-
+const chill =document.querySelector('#wind-chill');
 
 // asynchronous function that will use fetch() to request the given api url and then try to convert the response using a JSON parser that is built-in
 async function apiFetch() {
@@ -27,8 +27,8 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(weatherData) {
-    currentTemp.innerHTML = `${weatherData.main.temp.toFixed()}`;
-    wind.innerHTML = `${weatherData.wind.speed.toFixed()}`;
+    currentTemp.innerHTML = weatherData.main.temp.toFixed();
+    wind.innerHTML = weatherData.wind.speed.toFixed();
 
     const desc = weatherData.weather[0].description;
 
@@ -39,12 +39,14 @@ function displayResults(weatherData) {
     captionDesc.innerHTML = desc;
 
     //Calculate the windchill
-    let t = `${weatherData.main.temp}`;
-    let s = `${weatherData.wind.speed}`;
+    let temp = weatherData.main.temp;
+    let speed = weatherData.wind.speed;
 
 
-    if (t <= 50 && s > 3) {
-        let chill = 35.74 + (0.6215 * t) - (35.76 * (s ** 0.16)) + (0.4275 * t * (s ** 0.16));
+    if (temp <= 50 && speed > 3) {
+        let chill = 35.74 + (0.6215 * temp) - 
+        (35.76 * (speed ** 0.16)) + 
+        (0.4275 * temp * (speed ** 0.16));
     
         chill = Math.trunc(chill);
         let text = chill.toString();
@@ -52,10 +54,13 @@ function displayResults(weatherData) {
         let result = text.concat(text2);
     
         //Put the chill into the html element
-        document.getElementById("wind-chill").innerText = result;
+        //document.getElementById("wind-chill").innerText = result;
+
+        chill.innerHTML = `results`;
     }
     else {
-        document.getElementById("wind-chill").innerText = "N/A";
+        //document.getElementById("wind-chill").innerText = "N/A";
+        chill.innerHTML = `N/A`
     }
 }
 
