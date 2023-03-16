@@ -109,6 +109,10 @@ p {
     font-family: var(--font-paragraph);
 }
 
+.emoji {
+    font-size: 40px;
+}
+
 /*This is the style for the hamburger button*/
 #container {
     display: inline-block;
