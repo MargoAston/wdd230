@@ -1,0 +1,249 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+   /*These are the colors*/
+   --color-primary: #EFEFEF;
+   --color-secondary: #f7f7f7;
+   --color-accent1: #ffde59;
+   --color-accent2: #7CB242;
+   --color-accent3: #FF9E9E;
+   --color-accent4: #3F51B5;
+
+   --color-paragraph-background: #FFDE59;
+   --color-nav-link: #000000;
+   --color-nav-background: #cec7a8;
+   --color-nav-hover-link: #3a508a;
+   --color-nav-hover-background: #efefef;
+ 
+   /*These are the fonts*/
+   --font-heading: 'Sacramento', Verdana, sans-serif;
+   --font-subheading: Montserrat, Verdana, sans-serif;
+   --font-subheading2: Montserrat, Verdana, sans-serif;
+   --font-paragraph: Montserrat, Verdana, sans-serif;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: center;
+  font-family: var(--font-paragraph);
+}
+
+
+
+.logo {
+  margin: 0 auto;
+  width: 30vw;
+}
+
+h1 {
+  font-family: var(--font-heading);
+  text-shadow: 1px 1px var(--color-paragraph-background), 2px 2px #6f736f;
+  font-size: 7vh;
+  font-weight: 300;
+}
+
+h2 {
+  font-family: var(--font-subheading2);
+  font-weight: 500;
+}
+
+h3 {
+  font-family: var(--font-subheading2);
+  text-align: center;
+  font-weight: 300;
+  margin: .5em;
+}
+
+h4 {
+  font-family:var(--font-subheading2);
+  font-weight: 100;
+  margin: .5em;
+}
+
+p, li {
+  font-family: var(--font-paragraph);
+  color: var(--paragraph-color);
+  padding: .5em;
+  font-weight: 200;
+}
+
+hr {
+  height: 4px;
+  margin: 35px 0;
+  background: var(--color-accent4);
+}
+
+header {
+  padding: 1em;
+  text-align: center;
+  background-color: var(--color-paragraph-background);
+}
+
+#purpose {
+  margin: 4vh;
+}
+
+
+/* This is the font display box. */
+.font {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 3vw auto;
+}
+
+.font h1 {
+  font-size: 4vh;
+}
+
+.font h2 {
+  font-size: 3vh;
+}
+
+.font td:first-child {
+  text-align: right;
+  padding: 1em;
+  font-weight: 800;
+  border: 2px solid var(--color-primary);
+  background-color: var(--color-primary);
+}
+
+
+.font td:last-child{
+  text-align: left;
+  padding: 1em;
+  border: 2px solid var(--color-primary);
+}
+
+/* This is the color palette display box. */
+.table-large {
+  display: none;
+}
+.colors {
+  width: 80%;
+  margin: 3vw auto;
+  text-align: center;
+  border-collapse: collapse;
+
+}
+
+.colors th {
+  background-color: #ccc;
+}
+
+.colors tr:last-child {
+  color: white;
+}
+
+.colors td{
+  width: auto;
+  height: 3em;
+  border-bottom: white solid;
+}
+.primary {
+  background-color: var(--color-primary);
+}
+.secondary {
+  background-color: var(--color-secondary);
+}
+.accent1 {
+  background-color: var(--color-accent1);
+}
+.accent2{
+  background-color: var(--color-accent2);
+}
+.accent3{
+  background-color: var(--color-accent3);
+}
+.accent4{
+  background-color: var(--color-accent4);
+}
+
+td.colored {
+  background-color: var(--color-paragraph-background);
+}
+
+
+/* This is the site map. */
+.site-map {
+  display: grid;
+  justify-content: center;
+
+  grid-template-columns: repeat(6, 10%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-areas: ".  . home home .  ."
+    ". .  . top .  ."
+    " . left left center right . "
+    "page2 page2 page3 page3 page4 page4";
+}
+.site-map  {
+  text-align: center;
+}
+
+.sm-home {
+  grid-area: home;
+  background-color: #ccc;
+  line-height: 3em;
+}
+.sm-page-2 {
+  grid-area: page2;
+  background-color: #ccc;
+  line-height: 3em;
+  margin-right: 10px;
+}
+.sm-page-3 {
+  grid-area: page3;
+  background-color: #ccc;
+  line-height: 3em;
+  margin-left: 10px;
+  margin-right:10px;
+  
+}
+
+.sm-page-4 {
+  grid-area: page4;
+  background-color: #ccc;
+  line-height: 3em;
+  margin-left: 10px;
+}
+
+.top {
+  grid-area: top;
+  border-left: 1px solid;
+}
+
+.left {
+  grid-area: left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.right {
+  grid-area: right;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+.center {
+  grid-area: center;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.titles {
+  display: flex;
+  align-items: flex-end;
+}
+
+.titles h3{
+  flex: 1;  
+}
+
+.wireframes img {
+  max-width: 400px;
+}
+
+

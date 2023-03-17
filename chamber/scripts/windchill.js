@@ -3,7 +3,7 @@ const currentTemp = document.querySelector('#temperature');
 const weatherIcon = document.querySelector('#weather .emoji');
 const captionDesc = document.querySelector('.emoji-caption');
 const wind = document.querySelector('#wind-speed');
-const chill =document.querySelector('#wind-chill');
+const chillFactor =document.querySelector('#wind-chill');
 
 // asynchronous function that will use fetch() to request the given api url and then try to convert the response using a JSON parser that is built-in
 async function apiFetch() {
@@ -51,16 +51,13 @@ function displayResults(weatherData) {
         chill = Math.trunc(chill);
         let text = chill.toString();
         let text2 = "℉";
-        let result = text.concat(text2);
     
         //Put the chill into the html element
-        //document.getElementById("wind-chill").innerText = result;
-
-        chill.innerHTML = `results`;
+        chillFactor.innerHTML = text.concat(text2);
+    
     }
     else {
-        //document.getElementById("wind-chill").innerText = "N/A";
-        chill.innerHTML = `N/A`
+        chillFactor.innerHTML = `N/A`
     }
 }
 
