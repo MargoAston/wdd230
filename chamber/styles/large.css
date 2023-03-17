@@ -90,7 +90,9 @@
         grid-column: 1;
         grid-row: 1;
         margin-top: 0;
+        
     }
+    
 
     .spotlight {
         grid-column: 3/4;

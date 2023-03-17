@@ -270,6 +270,22 @@ section div {
     height: auto;
 }
 
+#event .emoji{
+    font-size: 5vw;
+    transition: font-size 2s;
+}
+
+#news .emoji {
+    font-size: 8vw;
+    transition: font-size 2s;
+}
+
+#news, #event {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 .spotlight div, .discover-container {
     margin: 1vh;
     background-color: var(--color-secondary); 
