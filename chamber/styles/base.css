@@ -30,6 +30,7 @@
 
 body {
     background-image: url("../images/dots.png");
+    
 }
 
 header {
@@ -328,6 +329,11 @@ footer img {
     margin-left: auto;
     margin-right: auto;
     width: 100px;
+    align-self: center;
+}
+
+footer h3 {
+    align-self: center;
 }
 
 footer#update-data {
@@ -345,6 +351,10 @@ footer a {
 footer a:hover {
     cursor: pointer;
     text-decoration: underline;
+}
+
+#cont-info p {
+    padding: 0;
 }
 
 #weather-credit {
