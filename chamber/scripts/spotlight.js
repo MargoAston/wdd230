@@ -62,7 +62,7 @@ const displaySpotlightMembers = (members, service) => {
                 //icon.setAttribute('height', '30px');
                 icon.setAttribute('class', 'spotlight-icon')
 
-                spotlightCard.setAttribute('class', 'spotCard')
+                spotlightCard.setAttribute('class', 'spot-card')
 
                 website.setAttribute('href', members[index].website);
 

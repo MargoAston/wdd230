@@ -226,15 +226,18 @@ main {
 }
 hr {
     height: 3px;
-    margin: 15px 0;
+    margin: 15px 0 30px;
     background: var(--color-accent4);
 }
 
 
 
 main.main1 section p {
-    padding-top: 1vh;
+    
+    padding-bottom: 1vh;
 }
+
+
 
 main.main1 section:nth-child(4) {
     display: flex;
@@ -283,6 +286,14 @@ section div {
 #join {
     display: none;
 }
+
+.spot-card {
+    height: 33%;
+}
+.spot-card h2{
+    margin-bottom: 10px;
+}
+
 
 
 
