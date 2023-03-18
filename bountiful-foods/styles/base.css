@@ -242,8 +242,23 @@ td.colored {
   flex: 1;  
 }
 
-.wireframes img {
-  max-width: 400px;
+.wireframe-container-base, .wireframe-container-medium, .wireframe-container-large {
+  display: flex;
+  align-items:flex-start;
+  justify-content: center;
 }
 
+.wireframe-container-base img {
+  max-width: 10vw;
+  padding: 1vw;
+}
 
+.wireframe-container-medium img {
+  max-width: 15vw;
+  padding: 1vw;
+}
+
+.wireframe-container-large img {
+  max-width: 20vw;
+  padding: 1vw;
+}
