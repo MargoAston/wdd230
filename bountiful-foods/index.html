@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Reference to the favicon-->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    
+    <title>Bountiful Foods</title>
+    <meta name="description" content="This is a website for a fictitous small business, specializing in organic foods.">
+
+     <!--Style Sheets-->
+     <link href="styles/normalize.css" rel="stylesheet">
+     <!--phone-default-->
+     <link type="text/css" rel="stylesheet" href="styles/base.css">
+     <!--enhance-tablet-->
+     <link type="text/css" rel="stylesheet" href="styles/medium.css">
+     <!--enhance-desktop-->
+     <link type="text/css" rel="stylesheet" href="styles/large.css">
+
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="images/logo.webp" alt="Bountiful Foods logo">
+        </a>
+
+        <nav>
+            <!--Animated hamburger button-->
+            <div id="container" onclick="toggleMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul id="primary-nav">
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="fresh.html">Fresh</a>
+                </li>
+                <li>
+                    <a href="about-us.html">About Us</a>
+                </li>
+                <li>
+                    <a href="resources.html">Resources</a>
+                </li> 
+                <li>
+                    <a href="https://www.facebook.com/lakeside.chamber">
+                    <span>
+                        <img src="images/facebook.png" alt="fb icon">
+                    </span>Facebook</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/lakesidechamber/">
+                    <span>
+                        <img src="images/instagram.png" alt="instagram icon"> 
+                    </span>Instagram</a>
+                </li>   
+            </ul>
+        </nav> 
+    </header>
+
+    <main>
+        <picture id="hero">
+            <!--
+            <source media="(max-width: 700px)" srcset="images/gone-fishin700.webp">
+            <source media="(max-width: 1108px)" srcset="images/gone-fishin1108.webp">
+            <img src="images/gone-fishin800.webp" alt="large sample image">
+            -->
+        
+            <img src="images/hero-field.webp" alt="hero image">
+            
+          
+        </picture>
+        <section class="intro">
+            <h2>Organic - Local - Delicious</h2>
+            <dir class="splash-container">
+                <img src=""  alt="fruit">
+                <p>Our mission is to provide fresh and healthy food options, including organic, made to order, fruit drinks and fruit bags</p>
+            </dir>
+            <dir class="splash-container">
+                <img src=""  alt="produce">
+                <p>Our mission is to provide fresh and healthy food options, including organic, made to order, fruit drinks and fruit bags</p>
+            </dir>  
+        </section>
+        <dir class="call-to-action-container">
+            <img src=""  alt="juice">
+            <p>Our mission is to provide fresh and healthy food options, including organic, made to order, fruit drinks and fruit bags</p>
+            <div class="juice-count">total number of specialty juice submitted:</div>
+        </dir>
+        <section>
+            <h2>Our Roots (history)</h2>
+            <div class="history-container">
+                <img src="" alt="">
+                <p>This is our town</p>
+            </div>
+            <div class="history-container">
+                <img src="" alt="">
+                <p>This is our history</p>
+            </div>
+            <div class="history-container">
+                <img src="" alt="">
+                <p>This is our weather</p>
+            </div>
+        </section>
+
+    </main>
+    
+
+    <footer>
+        <footer>
+            <img class="logo" src="images/logo-tan200.webp" alt="Lakeside Chamber logo">
+            
+            
+            <h3>Lakeside Chamber of Commerce - CA</h3>
+            <div id="cont-info">
+                <p class="address">
+                    <a href="https://goo.gl/maps/R4QwPnFjbDWserP97" target="_blank">
+                        <span>📍</span>  
+                    </a>
+                     9924 Vine ST., Lakeside, CA 92040
+                </p>
+                <p class="phone"><span>📞</span> 619.561.1031</p>
+                <p class="email"><span>📧</span> info@lakesidechamber.org</p>
+            </div>
+    
+            <hr>
+                <p id="copyright"></p>
+                <p>WDD230 Project</p>
+                <p id="update-date"></p>
+    
+                <p id="weather-credit">*Weather Data Provided by <span><a href="https://openweathermap.org/">openWeatherMap.org</a></span></p>    
+        </footer>
+
+    </footer>
+    
+</body>
+</html>

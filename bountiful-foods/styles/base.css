@@ -1,0 +1,21 @@
+:root {
+    /*These are the colors*/
+    --color-primary: #EFEFEF;
+    --color-secondary: #f7f7f7;
+    --color-accent1: #ffde59;
+    --color-accent2: #7CB242;
+    --color-accent3: #FF9E9E;
+    --color-accent4: #3F51B5;
+ 
+    --color-paragraph-background: #FFDE59;
+    --color-nav-link: #000000;
+    --color-nav-background: #cec7a8;
+    --color-nav-hover-link: #3a508a;
+    --color-nav-hover-background: #efefef;
+  
+    /*These are the fonts*/
+    --font-heading: 'Sacramento', Verdana, sans-serif;
+    --font-subheading: Montserrat, Verdana, sans-serif;
+    --font-subheading2: Montserrat, Verdana, sans-serif;
+    --font-paragraph: Montserrat, Verdana, sans-serif;
+ }
