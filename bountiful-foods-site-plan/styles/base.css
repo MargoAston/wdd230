@@ -242,6 +242,41 @@ td.colored {
   flex: 1;  
 }
 
+/* These are the persona display boxes. */
+.persona {
+  width: 80%;
+  margin: 3vw auto;
+  border: 2px solid var(--color-accent2);
+  border-collapse:collapse;
+}
+.persona th {
+  background-color:var(--color-accent2);
+  
+}
+.persona td:first-child {
+  text-align: right;
+  padding: 1em;
+  font-weight: 800;
+  border: 2px solid var(--color-primary);
+}
+.persona td:last-child{
+  text-align: left;
+  padding: 1em;
+  border: 2px solid var(--color-primary);
+}
+
+/* This is the scenario list */
+ul {
+  margin:auto 20%;
+  text-align: left;
+  line-height: 1em;
+}
+
+li {
+  padding: .5em;
+}
+
+/*This is the wireframe*/
 .wireframe-container-base, .wireframe-container-medium, .wireframe-container-large {
   display: flex;
   align-items:flex-start;

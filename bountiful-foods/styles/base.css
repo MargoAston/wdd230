@@ -54,11 +54,11 @@
     grid-column: 1/6;
     margin-top: 7vh;
     max-height: 50px;
-    background-color: var(--color-primary) ;
+    
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 20px rgb(69, 67, 67);
+    box-shadow: 0 0 30px var(--color-primary);
  }
 
  header .logo {
