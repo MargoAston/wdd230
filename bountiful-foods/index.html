@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--This is the font info-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nothing+You+Could+Do&family=Sacramento&display=swap" rel="stylesheet">
+    
     <!--Reference to the favicon-->
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     
@@ -23,10 +28,16 @@
 </head>
 <body>
     <header>
-        <a href="index.html">
-            <img class="logo" src="images/logo.webp" alt="Bountiful Foods logo">
-        </a>
-
+        <h1>Bountiful Foods</h1>
+        <div class="header-spacer">
+            
+        
+            <a href="index.html">
+                <img class="logo" src="images/logo-gray2.webp" alt="Bountiful Foods logo">
+            </a>
+    
+        
+       
         <nav>
             <!--Animated hamburger button-->
             <div id="container" onclick="toggleMenu(this)">
@@ -50,7 +61,7 @@
                 <li>
                     <a href="https://www.facebook.com/lakeside.chamber">
                     <span>
-                        <img src="images/facebook.png" alt="fb icon">
+                        <img src="images/facebook.png" alt="facebook icon">
                     </span>Facebook</a>
                 </li>
                 <li>
@@ -61,20 +72,23 @@
                 </li>   
             </ul>
         </nav> 
+    </div>
     </header>
 
     <main>
+        <!--
         <picture id="hero">
-            <!--
+            
             <source media="(max-width: 700px)" srcset="images/gone-fishin700.webp">
             <source media="(max-width: 1108px)" srcset="images/gone-fishin1108.webp">
             <img src="images/gone-fishin800.webp" alt="large sample image">
-            -->
+            
         
-            <img src="images/hero-field.webp" alt="hero image">
+            <img src="images/wheat-hero.webp" alt="hero image">
             
           
         </picture>
+        -->
         <section class="intro">
             <h2>Organic - Local - Delicious</h2>
             <dir class="splash-container">
@@ -136,6 +150,6 @@
         </footer>
 
     </footer>
-    
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
