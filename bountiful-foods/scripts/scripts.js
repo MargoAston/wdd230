@@ -5,3 +5,7 @@ function toggleMenu(x) {
 
     x.classList.toggle("change");
 }
+
+/*This is the update line*/
+var lastUpdated = `Last modified: ${document.lastModified}`;
+document.getElementById("update-date").innerText=lastUpdated;

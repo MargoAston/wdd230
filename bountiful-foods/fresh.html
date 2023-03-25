@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--This is the font info-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nothing+You+Could+Do&family=Sacramento&display=swap" rel="stylesheet">
+
+    <!--Reference to the favicon-->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+
+    <title>Fresh</title>
+    <meta name="description" content="This page invites users to create their own juice blend.">
+
+     <!--Style Sheets-->
+    
+     <!--phone-default-->
+     <link type="text/css" rel="stylesheet" href="styles/base.css">
+     <!--enhance-tablet-->
+     
+     <!--enhance-desktop-->
+
+</head>
+<body>
+    <header>
+        <h1>Fresh</h1>
+        
+        <div class="header-spacer">
+            
+            <a href="index.html">
+                <img class="logo" src="images/logo-gray2.webp" alt="Bountiful Foods logo">
+            </a>
+    
+       
+        <nav>
+            <!--Animated hamburger button-->
+            <div id="container" onclick="toggleMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul id="primary-nav">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="fresh.html" class="active">Fresh</a>
+                </li>
+                <li>
+                    <a href="about-us.html">About Us</a>
+                </li>
+                <li>
+                    <a href="resources.html">Resources</a>
+                </li> 
+                <li>
+                    <a href="https://www.facebook.com/lakeside.chamber">
+                    <span>
+                        <img src="images/facebook.png" alt="facebook icon">
+                    </span>Facebook</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/lakesidechamber/">
+                    <span>
+                        <img src="images/instagram.png" alt="instagram icon"> 
+                    </span>Instagram</a>
+                </li>   
+            </ul>
+        </nav> 
+    </div>
+    </header>
+
+    <main>
+        <section class="background">
+            <img src="" alt="juice blend">
+            <div>
+                <form method="get" action="welcome.html">
+                    
+                    <fieldset>
+                        <legend>My Contact Information</legend>
+                        <label class="top" >First Name* <input type="text" name="fname" required></label>
+                        <label class="top">Cell Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                        <label class="top" >Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend>My Juice Blend</legend>
+                        <label for="fruit">Choose your Fruit</label>
+                        <select name="fruit" multiple id="fruit">
+                            <option value="strawberry">Strawberry</option>
+                            <option value="bannan">Banana</option>
+                            <option value="peach">Peach</option>
+                            <option value="mango">Mango</option>
+                        </select>
+
+                    </fieldset>
+    
+                    <input type="hidden" id="time-now" name="time-now" value="">
+    
+                    <div>
+                    <input type="submit" value = "Place My order" class="submitBtn">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <footer>
+            <img class="logo" src="images/logo-gray2.webp" alt="Lakeside Chamber logo">
+            
+            
+            <h3>Bountiful Foods</h3>
+            <div id="cont-info">
+                <p class="address">
+                    <a href="https://goo.gl/maps/6Gu8XzxCDmGBgbAbA" target="_blank">
+                        <span>📍</span>  
+                    </a>
+                     1234 Main St., Carlsbad, CA 92008
+                </p>
+                <p class="phone"><span>📞</span> 760.555.1234</p>
+                <p class="email"><span>📧</span> BountifulFood@organicworld.org</p>
+            </div>
+    
+            <hr>
+                <p id="copyright"></p>
+                <p>WDD230 Project</p>
+                <p id="update-date"></p>
+       
+        </footer>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

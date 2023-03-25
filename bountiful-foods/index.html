@@ -108,7 +108,7 @@
             
             <div class="juice-container">
                 <img src="images/juice-bottles.webp"  alt="juice">
-            
+            <a href="fresh.html">
                 <div class="juice-count"> 
                     <h4>DIY Designer</h4> 
                     <h4>Juice Bar </h4>
@@ -116,7 +116,7 @@
                     <p>You have created
                     <span>6</span> private label juice blends</p>
                 </div>
-            
+            </a>
             </div>
         </div>
 
@@ -125,7 +125,7 @@
             <dir class="splash-container">
                 <img src="images/town.webp"  alt="town">
                 <h3>· Our Town ·</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </dir>
 
             <dir class="splash-container">
@@ -133,13 +133,52 @@
                 <h3>· Our History ·</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </dir>
-            
-            <dir class="splash-container">
-                <img src="images/weather.webp"  alt="blue skys">
+
+        <!--Weather Info-->
+            <div class="splash-container" id="weather-container">
+                
                 <h3>· Our Weather ·</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </dir>
-            
+
+                <div id="weather">
+                    <div id="current">
+                        <div class="day"> Today</div>
+                        <div id="current-info">
+                            <figure>
+                                <img src="" alt="logo" class="emoji">
+                                <figcaption class="emoji-caption">Sunny Skys
+                                </figcaption>
+                            </figure>
+                            <div id="weather-info">
+                                <p>Temp:<span id="temperature">
+                                </span></p>
+                                <p>Humidity:<span id="humidity"></span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div id="forecast">
+                    <div class="weather-forecast-item">
+                            <div class="day" id="day1"> Day1</div>
+    
+                            <img src="https://openweathermap.org/img/wn/10d.png" alt="weather icon" class="w-icon" id="w-icon1">
+                            
+                            <div class="temp" id="temp1"></div>
+                        
+                    </div>
+                    <div class="weather-forecast-item">
+                            <div class="day" id="day2"> Day2</div>
+                            <img src="https://openweathermap.org/img/wn/10d.png" alt="weather icon" class="w-icon" id="w-icon2">
+                            <div class="temp" id="temp2"></div>
+                    </div>
+                    <div class="weather-forecast-item">
+                            <div class="day" id="day3"> Day3</div>
+                            <img src="https://openweathermap.org/img/wn/10d.png" alt="weather icon" class="w-icon" id="w-icon3">
+                            <div class="temp" id="temp3"></div>  
+                    </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
@@ -153,13 +192,13 @@
             <h3>Bountiful Foods</h3>
             <div id="cont-info">
                 <p class="address">
-                    <a href="https://goo.gl/maps/R4QwPnFjbDWserP97" target="_blank">
+                    <a href="https://goo.gl/maps/6Gu8XzxCDmGBgbAbA" target="_blank">
                         <span>📍</span>  
                     </a>
-                     9924 Vine ST., Lakeside, CA 92040
+                     1234 Main St., Carlsbad, CA 92008
                 </p>
-                <p class="phone"><span>📞</span> 619.561.1031</p>
-                <p class="email"><span>📧</span> info@lakesidechamber.org</p>
+                <p class="phone"><span>📞</span> 760.555.1234</p>
+                <p class="email"><span>📧</span> BountifulFood@organicworld.org</p>
             </div>
     
             <hr>
@@ -172,5 +211,7 @@
 
     </footer>
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/lazyload.js"></script>
 </body>
 </html>
