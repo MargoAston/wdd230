@@ -74,34 +74,51 @@
     </header>
 
     <main>
+        
         <section class="background">
-            <img src="" alt="juice blend">
+            <p>Craft your own 'private-label' juice blend. Add any special instructions. Place your order. Your custom juice blend will be waiting for you at the pick-up window.</p>
+            
             <div>
-                <form method="get" action="welcome.html">
+                <form method="get" action="javascript:submit()">
                     
-                    <fieldset>
+                    <fieldset id="customer-info">
                         <legend>My Contact Information</legend>
                         <label class="top" >First Name* <input type="text" name="fname" required></label>
                         <label class="top">Cell Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
                         <label class="top" >Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
                     </fieldset>
     
-                    <fieldset>
+                    <fieldset id="fruit" >
+                        
                         <legend>My Juice Blend</legend>
-                        <label for="fruit">Choose your Fruit</label>
-                        <select name="fruit" multiple id="fruit">
-                            <option value="strawberry">Strawberry</option>
-                            <option value="bannan">Banana</option>
-                            <option value="peach">Peach</option>
-                            <option value="mango">Mango</option>
+                        <div class="top">
+                        <label for="fruit-list">Choose your Fruit</label>
+                        <select name="fruit-list" class="fruit-list1">
                         </select>
+                        </div>
+
+                        <div class="top">
+                        <label for="fruit-list">Choose your Fruit</label>
+                        <select name="fruit-list" class="fruit-list2">
+                        </select>
+                        </div>
+
+                        <div class="top">
+                        <label for="fruit-list">Choose your Fruit</label>
+                        <select name="fruit-list" class="fruit-list3">
+                        </select>
+                        </div>
+
+                        <label class="top">Special Instructions:
+                            <textarea name="special-instructions" id="sp-instructions" rows="4" placeholder="Enter special instructions here . . ."></textarea>
+                        </label>
+
+                        
 
                     </fieldset>
     
-                    <input type="hidden" id="time-now" name="time-now" value="">
-    
                     <div>
-                    <input type="submit" value = "Place My order" class="submitBtn">
+                    <input type="submit" value = "Place My Order" class="submitBtn">
                     </div>
                 </form>
             </div>
@@ -133,5 +150,8 @@
         </footer>
 
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/fresh.js"></script>
+    <script src="scripts/juiceBlends.js"></script>
+    
 </body>
 </html>
