@@ -211,7 +211,14 @@ nav ul.open {
     padding-bottom: 2vh;
 }
 
-.background h2 {
+.background2 {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;  
+    padding-bottom: 2vh;
+}
+
+.background h2, .background2 h2{
     font-size: 3.5vh;
     padding-top: 6vh;
 }
@@ -245,7 +252,7 @@ nav ul.open {
   
 }
 
-img {
+img{
     border: solid var(--color-primary) 7px;
     box-shadow: 0 0 10px #7d7b7b; 
 }
@@ -303,6 +310,10 @@ img {
 }
 
 .roots {
+    padding-top: 10px;
+}
+
+.weather {
     margin-top: 15vh;
     padding-top: 10px;
 }
@@ -531,7 +542,7 @@ form label.sbs {
     
 }
 
-form input.submitBtn {
+form input#submit-btn {
     border: none;
     background-color: var(--color-accent3);
     
@@ -539,6 +550,11 @@ form input.submitBtn {
     width: 75%;
     max-width: 340px; 
     padding: .75rem 1.5rem;
+}
+
+form input#submit-btn:hover {
+    cursor:pointer;
+    transform: scale(1.1);
 }
 
 form label.top input:required {
@@ -587,4 +603,24 @@ fieldset {
 .top {
     text-align: left;
     
+}
+
+/*This is the style for the about us page*/
+.contact-info {
+    margin-top: 10vh;
+    width: 100vh;
+}
+.contact-info p{
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.background2 h3 {
+    font-family: var(--font-heading);
+    font-size: 5vh;
+}
+iframe {
+    margin: -80px;
+    box-shadow: 0 0 10px #7d7b7b; 
 }

@@ -76,20 +76,22 @@
     <main>
         
         <section class="background">
+            <h2>DIY - Juice Blend</h2>
             <p>Craft your own 'private-label' juice blend. Add any special instructions. Place your order. Your custom juice blend will be waiting for you at the pick-up window.</p>
             
             <div>
-                <form method="get" action="javascript:submit()">
+                <form name="myform" action="javascript:submit()">
                     
                     <fieldset id="customer-info">
                         <legend>My Contact Information</legend>
-                        <label class="top" >First Name* <input type="text" name="fname" required></label>
-                        <label class="top">Cell Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
-                        <label class="top" >Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                        <label class="top">First Name* <input type="text" name="fname" id="name" required></label>
+
+                        <label class="top" >Cell Phone* <input type="tel" name="phone" placeholder="1235551234" id="phone" required></label>
+
+                        <label class="top" >Email* <input type="email" name="email" placeholder="someone@gmail.com" id="email" required></label>
                     </fieldset>
     
                     <fieldset id="fruit" >
-                        
                         <legend>My Juice Blend</legend>
                         <div class="top">
                         <label for="fruit-list">Choose your Fruit</label>
@@ -112,46 +114,45 @@
                         <label class="top">Special Instructions:
                             <textarea name="special-instructions" id="sp-instructions" rows="4" placeholder="Enter special instructions here . . ."></textarea>
                         </label>
-
-                        
-
                     </fieldset>
+
+                    <div id="nutrition"></div>
     
                     <div>
-                    <input type="submit" value = "Place My Order" class="submitBtn">
+                    <input type="submit" name="submit" value = "Verify My Order" id="submit-btn">
                     </div>
                 </form>
             </div>
         </section>
     </main>
 
-    <footer>
-        <footer>
-            <img class="logo" src="images/logo-gray2.webp" alt="Lakeside Chamber logo">
-            
-            
-            <h3>Bountiful Foods</h3>
-            <div id="cont-info">
-                <p class="address">
-                    <a href="https://goo.gl/maps/6Gu8XzxCDmGBgbAbA" target="_blank">
-                        <span>📍</span>  
-                    </a>
-                     1234 Main St., Carlsbad, CA 92008
-                </p>
-                <p class="phone"><span>📞</span> 760.555.1234</p>
-                <p class="email"><span>📧</span> BountifulFood@organicworld.org</p>
-            </div>
     
-            <hr>
-                <p id="copyright"></p>
-                <p>WDD230 Project</p>
-                <p id="update-date"></p>
+    <footer>
+        <a href="index.html">
+            <img class="logo" src="images/logo-gray2.webp" alt="Lakeside Chamber logo">
+        </a>
+            
+        <h3>Bountiful Foods</h3>
+        <div id="cont-info">
+            <p class="address">
+                <a href="https://goo.gl/maps/6Gu8XzxCDmGBgbAbA" target="_blank">
+                        <span>📍</span>  
+                </a>
+                1234 Main St., Carlsbad, CA 92008
+            </p>
+            <p class="phone"><span>📞</span> 760.555.1234</p>
+            <p class="email"><span>📧</span> BountifulFood@organicworld.org</p>
+        </div>
+    
+        <hr>
+        <p id="copyright"></p>
+        <p>WDD230 Project</p>
+        <p id="update-date"></p>
        
-        </footer>
+    </footer>
 
     <script src="scripts/scripts.js"></script>
     <script src="scripts/fresh.js"></script>
-    <script src="scripts/juiceBlends.js"></script>
     
 </body>
 </html>
