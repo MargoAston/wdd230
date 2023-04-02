@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--This is the font info-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nothing+You+Could+Do&family=Sacramento&display=swap" rel="stylesheet"> 
+
+   <!--Reference to the favicon-->
+   <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+
+    <title>Document</title>
+
+     <!--Style Sheets-->
+     <link type="text/css" rel="stylesheet" href="styles/base.css">
+
+</head>
+<body>
+    <header>
+        <h1>Bountiful Foods</h1>
+        <div class="header-spacer">
+            
+        
+            <a href="index.html">
+                <img class="logo" src="images/logo-gray2.webp" alt="Bountiful Foods logo">
+            </a>
+    
+        
+       
+            <nav>
+                <!--Animated hamburger button-->
+                <div id="container" onclick="toggleMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                </div>
+                <ul id="primary-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="fresh.html">Fresh</a>
+                    </li>
+                    <li>
+                        <a href="about-us.html">About</a>
+                    </li>
+                    <li>
+                        <a href="resources.html" class="active">Resources</a>
+                    </li> 
+                    <li>
+                        <a href="https://www.facebook.com">
+                        <span>
+                            <img src="images/facebook.png" alt="facebook icon">
+                        </span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com">
+                        <span>
+                            <img src="images/instagram.png" alt="instagram icon"> 
+                        </span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com">
+                        <span>
+                            <img src="images/twitter.png" alt="twitter icon"> 
+                        </span></a>
+                    </li> 
+                </ul>
+            </nav> 
+        </div>
+    </header>
+
+    <main>
+        <section id="resources-main">
+            <h2>Resources</h2>
+            <p>
+                A big Thank You to Canva for the amazing images:
+            </p>
+            
+        </section>
+        <hr>
+    </main>
+    <footer id="resources-footer">
+        <a href="https://www.canva.com/" target="_blank">canva: online graphic design tool - I have a subscription; 
+        </a>
+    </footer>
+    
+   
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

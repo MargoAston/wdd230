@@ -35,7 +35,7 @@
     background-image: url("/images/hero-field.webp");
     
     position: sticky;
-    top: -40vh;
+    top: -43vh;
  }
 
  header p {
@@ -87,13 +87,20 @@
     box-shadow: 0 0 40px var(--color-primary);
     position: sticky;
     top: 5vh;
+
  }
 
- .logo {
+ .header-spacer a {
+    grid-column: 2/3;
+ }
+
+ .logo, .logo-footer {
     max-height: 10vh;
     border: solid rgb(129, 122, 122) 3px;
     border-radius: 10px;
  }
+
+
 
  .logo:hover {
     cursor: pointer;
@@ -138,14 +145,13 @@ nav #container:hover {
 /*This is the navigation style*/
 nav {
     position: absolute;
-    top: vh;
+    /*top: vh;*/
     right: 10vw;
 
     align-self: flex-start;
     justify-self: right;
     text-align:center; 
     font-family: var(--font-subheading2);
-    /*font-weight: 100;*/
     width: 90px;
 }
 
@@ -166,7 +172,7 @@ nav a {
     text-decoration: none;
     color: var(--nav-link-color);
     border-top: 1px solid rgba(0,0,0,0.5);
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     font-family: var(--font-subheading2);
     font-weight: 300;  
 }
@@ -175,6 +181,7 @@ span img {
     max-height: 20px;
     border-radius: 10px;
     align-self: center;
+    
 }
 
 nav ul li a:hover {
@@ -188,7 +195,7 @@ nav ul li a:hover {
 
 .active{
     text-decoration: underline;
-    background-color: #fff;
+    background-color: var(--color-accent1);
 
 }
 
@@ -220,7 +227,11 @@ nav ul.open {
 
 .background h2, .background2 h2{
     font-size: 3.5vh;
-    padding-top: 6vh;
+    padding-top: 3vh;
+}
+
+.background h2 {
+    margin-bottom: 8vh;
 }
 
 .splash-container {
@@ -242,10 +253,17 @@ nav ul.open {
 .splash-container p {
     max-width: 80%;
     margin-top: 2vh;
-    padding-right: 1.5vh;
     overflow: scroll;
     scrollbar-width:auto;
 }
+
+.splash-info p {
+    margin-top: 0vh;
+    overflow: scroll;
+    scrollbar-width: auto;
+    height: 150px;
+}
+
 
 .splash-container p:hover {
     cursor: pointer;
@@ -338,6 +356,13 @@ img{
 
 
 /*This is the weather style*/
+.weather {
+    background-color: var(--color-primary);
+}
+
+.weather h2 {
+    text-align: center;
+}
 #weather {
     display: flex;
     flex-direction: column;
@@ -345,21 +370,25 @@ img{
     justify-content: center;
     padding:5px;
     max-width: 80%;
-    margin-top: 2vh;
- 
+    margin: 0 auto;
+    
 }
 
+#weather-container {
+    margin: 0;
+    padding: 0;
+}
 
 #current {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     border: solid 1px var(--color-accent2);
     border-radius: 10px; 
     padding: 5px;
-    margin: 2px 0px;
+    
 }
 
 #current-info {
@@ -414,7 +443,7 @@ figure {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     height: 100px;
     border: 1px solid var(--color-accent2);
     border-radius: 10px;
@@ -623,4 +652,17 @@ fieldset {
 iframe {
     margin: -80px;
     box-shadow: 0 0 10px #7d7b7b; 
+}
+
+/* ----------Resources Page---------- */
+
+#resources-main h2, #resources-main p{
+    text-align: center;
+    margin: 3vh;
+}
+
+#resources-footer a{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vh;
 }

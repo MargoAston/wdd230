@@ -1,0 +1,39 @@
+@media only screen and (min-width: 765px) {
+
+   .background h2 {
+    margin-bottom: 0;
+   }
+
+
+    .splash-container-home {
+        display: flex;
+        flex-direction: row;
+        margin:  5vh;
+        padding: 0;
+    }
+
+    .splash-container-home h3 {
+        padding: 1.5vh;
+        margin: 0;
+    }
+
+    .splash-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5vh;
+    }
+
+    .splash-info p {
+        padding: 0;
+        overflow: scroll;
+    }
+
+    #weather {
+        flex-direction: row;
+    }
+
+   
+
+}
