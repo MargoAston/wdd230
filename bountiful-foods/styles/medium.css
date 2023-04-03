@@ -34,6 +34,20 @@
         flex-direction: row;
     }
 
-   
+   /* -------FOOTER------- */
+   #footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    margin-top: 2vh;
+   }
+
+   #cont-info, #copyright-info {
+    padding: 0;
+    margin: 0;
+    align-self: center;
+   }
+
 
 }

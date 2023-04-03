@@ -73,6 +73,12 @@
 
     }
 
+    /* ---------FOOTER------- */
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
      /* --------About Us--------- */
      .roots-info {
         display: grid;

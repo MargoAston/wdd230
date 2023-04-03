@@ -465,21 +465,26 @@ figure {
 
 /*This is the footer style*/
 footer {
-    padding: 1rem 0;
-    font-family: var(--font-paragraph);
-    
+    padding:  0;
+    font-family: var(--font-paragraph);  
+    margin-bottom: 2vh;
 }
+
 
 footer img {
     display: block;
-    margin:  0 auto;
+    margin:  2vh auto 0;
     
 }
 
 footer h3 {
     text-align: center;
-    padding: 15px 0 10px;
+    padding: 15px 0 0;
+    font-family: var(--font-heading);
+    font-size: 4vh;
 }
+
+
 
 footer#update-data {
     grid-column: 3;
@@ -498,8 +503,16 @@ footer a:hover {
     text-decoration: underline;
 }
 
+#cont-info {
+    margin-bottom: 1.5vh;
+}
+
 #cont-info p {
     padding: 0;
+}
+
+#copyright {
+    margin-top: 1.5vh;
 }
 
 .credits {
