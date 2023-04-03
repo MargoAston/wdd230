@@ -61,6 +61,18 @@
         display: none;
     }  
 
+    /* --------Main-------- */
+    #home-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .splash-container-home {
+        display: flex;
+        flex-direction: column;
+
+    }
+
      /* --------About Us--------- */
      .roots-info {
         display: grid;
