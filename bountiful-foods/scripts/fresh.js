@@ -11,12 +11,12 @@ async function getFruitData(url) {
     displayFruits(data);
     displayFruits2(data);
     displayFruits3(data);
-
+    //add event listener here
 }
 
 getFruitData(url);
 
-
+/*-------FRUIT SELECTION--drop-down-boxes------*/
 const displayFruits = (fruits, service) => {
     //select the output container element
     const fruitList1 = document.querySelector('.fruit-list1');
@@ -77,9 +77,7 @@ const displayFruits3 = (fruits, service) => {
 
 
 function submit() {
-    console.log("we are in the submit function");
-    
-    
+
     //Get the stored value in localStorage.
     let numBlends = Number(window.localStorage.getItem("blends-ls"));
 
@@ -88,92 +86,159 @@ function submit() {
 
     //Store the new number of juice blends.
     localStorage.setItem("blends-ls", numBlends);
-    //console.log(numBlends);
 
     /*--------NUTRITION INFO-------*/
     //Select the output container for nutrition info.
     const custOrderCard = document.querySelector("#nutrition");
 
+    const nutritionTable = document.querySelector("table");
+
+    const row1 = document.querySelector(".row1");
+    const row2 = document.querySelector(".row2");
+    const row3 = document.querySelector(".row3");
+    const row4 = document.querySelector(".row4");
+    const row5 = document.querySelector(".row5");
+
     //Create customer info container.
     let customerCard = document.createElement('div');
+    //Create recipe info container.
+    let recipeCard = document.createElement('div');
     //Create nutritional info container.
     let nutritionCard = document.createElement('div');
 
+    //Set attributes
+    customerCard.setAttribute('class', 'verify-name');
+    recipeCard.setAttribute('class', 'recipe');
+
     //Create customer info elements.
     let today = document.createElement('p');
-    let heading1 = document.createElement('h3');
+    let line = document.createElement('hr');
     let firstName = document.createElement('p');
     let email = document.createElement('p');
     let phone = document.createElement('p');
     
 
-    //Create nutrition info elements.
+    //Create recipe info elements.
     let heading2 = document.createElement('h3');
     let fruit1 = document.createElement('p');
     let fruit2 = document.createElement('p');
     let fruit3 = document.createElement('p');
     let instructions = document.createElement('p');
 
-    let carbs = document.createElement('p');
-    let protein = document.createElement('p');
-    let fats = document.createElement('p');
-    let sugar = document.createElement('p');
-    let calories = document.createElement('p');
+    //Create nutrition info elements.
+    let carbs = document.createElement('td');
+    let protein = document.createElement('td');
+    let fat = document.createElement('td');
+    let sugar = document.createElement('td');
+    let calories = document.createElement('td');
+    
+    //Create variables to hold nutrition data for each fruit
+    let carbs1 = 0;
+    let protein1 = 0;
+    let fat1 = 0;
+    let sugar1 = 0;
+    let calories1 = 0;
+    
+    let carbs2 = 0;
+    let protein2 = 0;
+    let fat2 = 0;
+    let sugar2 = 0;
+    let calories2 = 0;
+
+    let carbs3 = 0;
+    let protein3 = 0;
+    let fat3 = 0;
+    let sugar3 = 0;
+    let calories3 = 0;
 
     //Get values and assign to the new elements.
 
     const now = new Date();
-    today.innerHTML = 'order date: ' + now.toLocaleString('default', {month: 'long'}) + ' ' + now.getDay() + ', ' + now.getFullYear();
+    today.innerHTML = 'order date: ' + now.toLocaleString('default', {month: 'long'}) + ' ' + now.getDate() + ', ' + now.getFullYear();
 
 
-    heading1.innerHTML = 'Please verify your contact information:'
-    firstName.innerHTML = 'name: ' + (document.querySelector("#name").value);
-    email.innerHTML = 'email: ' + document.querySelector("#email").value;
-    phone.innerHTML = 'phone: ' + document.querySelector("#phone").value;
+    firstName.innerHTML = document.querySelector("#name").value + "'s Private Label juice blend";
+    email.innerHTML = document.querySelector("#email").value;
+    phone.innerHTML = document.querySelector("#phone").value;
 
-    heading2.innerHTML = 'You have selected:';
+    heading2.innerHTML = 'Ingredients:';
     fruit1.innerHTML = document.querySelector(".fruit-list1").value;
     fruit2.innerHTML = document.querySelector(".fruit-list2").value;
     fruit3.innerHTML = document.querySelector(".fruit-list3").value;
     instructions.innerHTML = 'Special Instructions: ' + document.querySelector("#sp-instructions").value;
 
     //find fruit1 in data
-    //const foundIndex = data.findIndex("name":"Apple")
-    const index = 4
-    const foundFruit = data[index];
-    console.log(foundFruit);
+    data.forEach((fruit)=> {
+        if (fruit.name == fruit1.innerHTML) {
+            carbs1 = parseFloat(fruit.nutritions.carbohydrates);
+            protein1 = parseFloat(fruit.nutritions.protein);
+            fat1 = parseFloat(fruit.nutritions.fat);
+            sugar1 = parseFloat(fruit.nutritions.sugar);
+            calories1 = parseFloat(fruit.nutritions.calories);
+        }
+    })
 
-    console.log(foundFruit.name);
-    //carbs.innerHTML = `${data.name}`;
+    
+    //find fruit2 in data
+    data.forEach((fruit)=> {
+        if (fruit.name == fruit2.innerHTML) {
+            carbs2 = parseFloat(fruit.nutritions.carbohydrates);
+            protein2 = parseFloat(fruit.nutritions.protein);
+            fat2 = parseFloat(fruit.nutritions.fat);
+            sugar2 = parseFloat(fruit.nutritions.sugar);
+            calories2 = parseFloat(fruit.nutritions.calories);
+        }
+    })
+
+    //find fruit3 in data
+    data.forEach((fruit)=> {
+        if (fruit.name == fruit3.innerHTML) {
+            carbs3 = parseFloat(fruit.nutritions.carbohydrates);
+            protein3 = parseFloat(fruit.nutritions.protein);
+            fat3 = parseFloat(fruit.nutritions.fat);
+            sugar3 = parseFloat(fruit.nutritions.sugar);
+            calories3 = parseFloat(fruit.nutritions.calories);
+        }
+    })
+
+    //Add nutritional data to table
+    row1.innerHTML = ((carbs1 + carbs2 + carbs3).toFixed(2));
+    row2.innerHTML = ((protein1 + protein2 + protein3).toFixed(2));
+    row3.innerHTML = ((fat1 + fat2 + fat3).toFixed(2));
+    row4.innerHTML = ((sugar1 + sugar2 + sugar3).toFixed(2));
+    row5.innerHTML = ((calories1 + calories2 + calories3).toFixed(2));
     
 
     //Append customer info to customerCard
     customerCard.appendChild(today);
-    customerCard.appendChild(heading1);
+    customerCard.appendChild(line);
     customerCard.appendChild(firstName);
     customerCard.appendChild(email);
     customerCard.appendChild(phone);
 
-    //Append fruit info to nutritionCard
-    nutritionCard.appendChild(heading2);
-    nutritionCard.appendChild(fruit1);
-    nutritionCard.appendChild(fruit2);
-    nutritionCard.appendChild(fruit3);
-    nutritionCard.appendChild(instructions);
+    //Append fruit info to recipeCard
+    recipeCard.appendChild(heading2);
+    recipeCard.appendChild(fruit1);
+    recipeCard.appendChild(fruit2);
+    recipeCard.appendChild(fruit3);
+    recipeCard.appendChild(instructions);
 
-    nutritionCard.appendChild(carbs);
 
     //Append customerCard to custOrderCard
     custOrderCard.appendChild(customerCard);
 
+    //Append recipeCard to custOrderCard
+    custOrderCard.appendChild(recipeCard);
+
     //Append nutritionCard to custOrderCard
     custOrderCard.appendChild(nutritionCard);
 
-    console.log(data);
+    nutritionTable.style.display = 'inline-block';
+    nutritionTable.style.margin = '0';
 
 
     //Reset form.
-    //document.querySelector("form").reset();
+    document.querySelector("form").reset();
 
 }
 
