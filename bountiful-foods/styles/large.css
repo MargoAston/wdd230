@@ -62,7 +62,7 @@
     }  
 
     /* --------Main-------- */
-    #home-container {
+    .home-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }

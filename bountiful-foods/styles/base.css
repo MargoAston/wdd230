@@ -36,6 +36,8 @@
     
     position: sticky;
     top: -41vh;
+
+    z-index: 500;
  }
 
  header p {
@@ -45,6 +47,7 @@
     margin-top: 50px;
     box-shadow: inset 6px 6px 10px 0 rgba(0,0,0,0.2), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
     border-radius: 40px;
+    z-index: 100;
  }
 
  h1 {
@@ -153,6 +156,7 @@ nav {
     text-align:center; 
     font-family: var(--font-subheading2);
     width: 90px;
+    
 }
 
 
@@ -256,6 +260,12 @@ nav ul.open {
     scrollbar-width:auto;
 }
 
+.roots-info .splash-container img {
+    margin: -50px;
+    width:100%;
+    
+}
+
 .splash-info p {
     margin-top: 0vh;
     overflow: scroll;
@@ -272,6 +282,13 @@ nav ul.open {
 img{
     border: solid var(--color-primary) 7px;
     box-shadow: 0 0 10px #7d7b7b; 
+    filter: blur(0em);
+    transition: filter .8s;
+    
+}
+
+img[data-src] {
+    filter:blur(0.5em);
 }
 
 .polka-dots {
@@ -336,7 +353,7 @@ img{
 }
 
 .roots h2 {
-    padding-bottom: 6vh;
+    padding-bottom: 9vh;
 }
 
 .roots .splash-container {
@@ -345,14 +362,14 @@ img{
     background-color: var(--color-secondary);
     margin-left: 10vh;
     margin-right: 10vh;
-    margin-top: 9vh;
+    margin-top: 0;
 }
 
 
-.roots img {
-    margin-top: -60px;
+.background img {
+    max-width: 454px;
+    margin: 0 auto;
 }
-
 
 /*--------WEATHER-------*/
 .weather {
@@ -360,6 +377,7 @@ img{
 }
 
 .weather h2 {
+    font-size: 3.5vh;
     text-align: center;
 }
 #weather {
@@ -719,8 +737,9 @@ tr:nth-child(odd) {
     font-size: 5vh;
 }
 iframe {
-    margin: -80px;
+    margin: -50px;
     box-shadow: 0 0 10px #7d7b7b; 
+    width
 }
 
 /* ----------Resources Page---------- */

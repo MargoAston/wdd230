@@ -19,3 +19,4 @@ let numBlends = Number(window.localStorage.getItem("blends-ls"));
 
 //Put value in juiceCount.
 juiceCount.innerHTML = numBlends;
+
