@@ -12,9 +12,12 @@ async function getFruitData(url) {
     displayFruits2(data);
     displayFruits3(data);
     //add event listener here
+     
 }
 
 getFruitData(url);
+
+
 
 /*-------FRUIT SELECTION--drop-down-boxes------*/
 const displayFruits = (fruits, service) => {
@@ -78,11 +81,13 @@ const displayFruits3 = (fruits, service) => {
 
 function submit() {
 
-    //Get the stored value in localStorage.
+    //Get the stored value in localStorage. 
     let numBlends = Number(window.localStorage.getItem("blends-ls"));
+
 
     //Increment number of blends.
     numBlends ++;
+    
 
     //Store the new number of juice blends.
     localStorage.setItem("blends-ls", numBlends);
@@ -162,9 +167,9 @@ function submit() {
     phone.innerHTML = document.querySelector("#phone").value;
 
     heading2.innerHTML = 'Ingredients:';
-    fruit1.innerHTML = document.querySelector(".fruit-list1").value;
-    fruit2.innerHTML = document.querySelector(".fruit-list2").value;
-    fruit3.innerHTML = document.querySelector(".fruit-list3").value;
+    fruit1.innerHTML = document.querySelector("#fruit-list1").value;
+    fruit2.innerHTML = document.querySelector("#fruit-list2").value;
+    fruit3.innerHTML = document.querySelector("#fruit-list3").value;
     instructions.innerHTML = 'Special Instructions: ' + document.querySelector("#sp-instructions").value;
 
     //find fruit1 in data
@@ -238,7 +243,7 @@ function submit() {
 
 
     //Reset form.
-    document.querySelector("form").reset();
+    //document.querySelector("form").reset();
 
 }
 

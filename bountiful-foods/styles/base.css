@@ -191,7 +191,7 @@ nav ul li a:hover {
     color: var(--color-nav-hover-link);
     background-color: var(--color-nav-hover-background);
     text-decoration: underline;
-    transform: none;
+    transform: scale(1.1);
     cursor: pointer;
 }
 
@@ -340,7 +340,6 @@ img[data-src] {
 
 .polka-dots .juice-count p {
     margin: 10px;
-    
 }
 
 .roots {
@@ -492,7 +491,10 @@ footer {
 footer img {
     display: block;
     margin:  2vh auto 0;
-    
+}
+
+footer img:hover {
+    transform: scale(1.1);
 }
 
 footer h3 {
