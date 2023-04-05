@@ -241,6 +241,8 @@ function submit() {
 
     //Reset form.
     //document.querySelector("form").reset();
+    //do not display submit button after it is clicked
+    document.querySelector("#submit-btn").style.display = 'none';
 
 }
 
