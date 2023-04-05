@@ -11,13 +11,10 @@ async function getFruitData(url) {
     displayFruits(data);
     displayFruits2(data);
     displayFruits3(data);
-    //add event listener here
-     
+
 }
 
 getFruitData(url);
-
-
 
 /*-------FRUIT SELECTION--drop-down-boxes------*/
 const displayFruits = (fruits, service) => {
