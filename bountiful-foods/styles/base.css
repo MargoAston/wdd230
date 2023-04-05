@@ -32,7 +32,7 @@
     grid-template-columns:3fr 2fr 1fr 2fr 3fr;
     width:100%;
     height: 440px;
-    background-image: url("../images/hero-field.webp");
+    background-image: url("../images/hero1920tiny.webp");
     
     position: sticky;
     top: -41vh;
@@ -89,7 +89,7 @@
     justify-content: center;
     box-shadow: 0 0 40px var(--color-primary);
     position: sticky;
-    top: 5vh;
+    top: 6.2vh;
 
  }
 
@@ -148,7 +148,6 @@ nav #container:hover {
 /*This is the navigation style*/
 nav {
     position: absolute;
-    /*top: vh;*/
     right: 10vw;
 
     align-self: flex-start;
@@ -341,6 +340,7 @@ img[data-src] {
 
 .polka-dots .juice-count p {
     margin: 10px;
+    
 }
 
 .roots {
@@ -739,7 +739,7 @@ tr:nth-child(odd) {
 iframe {
     margin: -50px;
     box-shadow: 0 0 10px #7d7b7b; 
-    width
+    width: 80%;
 }
 
 /* ----------Resources Page---------- */

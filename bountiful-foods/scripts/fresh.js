@@ -19,7 +19,7 @@ getFruitData(url);
 /*-------FRUIT SELECTION--drop-down-boxes------*/
 const displayFruits = (fruits, service) => {
     //select the output container element
-    const fruitList1 = document.querySelector('.fruit-list1');
+    const fruitList1 = document.querySelector('#fruit-list1');
 
     fruitCount = 0;
     fruits.forEach((fruit) => {
@@ -38,7 +38,7 @@ const displayFruits = (fruits, service) => {
 
 const displayFruits2 = (fruits, service) => {
     //select the output container element
-    const fruitList2 = document.querySelector('.fruit-list2');
+    const fruitList2 = document.querySelector('#fruit-list2');
 
     fruits.forEach((fruit) => {
         //Create element to add to the juice bar fruit list
@@ -56,7 +56,7 @@ const displayFruits2 = (fruits, service) => {
 
 const displayFruits3 = (fruits, service) => {
     //select the output container element
-    const fruitList3 = document.querySelector('.fruit-list3');
+    const fruitList3 = document.querySelector('#fruit-list3');
 
     fruits.forEach((fruit) => {
         //Create element to add to the juice bar fruit list
